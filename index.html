@@ -1,167 +1,253 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<title>LeadingTechs -  Home</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/easySlider1.5.js"></script>
-<script type="text/javascript" charset="utf-8">
-// <![CDATA[
-$(document).ready(function(){	
-	$("#slider").easySlider({
-		controlsBefore:	'<p id="controls">',
-		controlsAfter:	'</p>',
-		auto: true, 
-		continuous: true
-	});	
-});
-// ]]>
-</script>
-<style type="text/css">
-.gallery { width:890px; height:350px; margin:0 auto; }
-#slider { margin:0; padding:0; list-style:none; }
-#slider ul,
-#slider li { margin:0; padding:0; list-style:none; }
-/* 
-    define width and height of list item (slide)
-    entire slider area will adjust according to the parameters provided here
-*/
-#slider li { width:890px; height:350px; overflow:hidden; }
-p#controls { margin:0; padding:0; position:relative; }
-#prevBtn { display:block; margin:0; overflow:hidden; width:35px; height:75px; position:absolute; left:-55px; top:-210px; }
-#nextBtn { display:block; margin:0; overflow:hidden; width:35px; height:75px; position:absolute; left: 910px; top:-210px; }
-#prevBtn a { display:block; width:35px; height:75px; background:url(images/l_arrow.png) no-repeat 0 0; }
-#nextBtn a { display:block; width:35px; height:75px; background:url(images/r_arrow.png) no-repeat 0 0; }
-</style>
+    <title>VegasTechs - Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/easySlider1.5.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        // <![CDATA[
+        $(document).ready(function () {
+            $("#slider").easySlider({
+                controlsBefore: '<p id="controls">',
+                controlsAfter: '</p>',
+                auto: true,
+                continuous: true
+            });
+
+            // Show the popup and overlay
+            $(".popup").fadeIn();
+            $(".overlay").fadeIn();
+        });
+        // ]]>
+    </script>
+
+    <style type="text/css">
+        .gallery {
+            width: 890px;
+            height: 350px;
+            margin: 0 auto;
+        }
+
+        #slider {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #slider ul,
+        #slider li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #slider li {
+            width: 890px;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        p#controls {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        #prevBtn {
+            display: block;
+            margin: 0;
+            overflow: hidden;
+            width: 35px;
+            height: 75px;
+            position: absolute;
+            left: -55px;
+            top: -210px;
+        }
+
+        #nextBtn {
+            display: block;
+            margin: 0;
+            overflow: hidden;
+            width: 35px;
+            height: 75px;
+            position: absolute;
+            left: 910px;
+            top: -210px;
+        }
+
+        #prevBtn a {
+            display: block;
+            width: 35px;
+            height: 75px;
+            background: url(images/l_arrow.png) no-repeat 0 0;
+        }
+
+        #nextBtn a {
+            display: block;
+            width: 35px;
+            height: 75px;
+            background: url(images/r_arrow.png) no-repeat 0 0;
+        }
+
+        /* Popup and overlay styling */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 999;
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 150px;
+            margin-left: -150px;
+            margin-top: -75px;
+            background-color: white;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            z-index: 1000;
+            display: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .popup h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .popup p {
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="main">
-  <div class="header">
-    <div class="block_header">
-      <div class="logo"><a href="index.html"><img src="images/LeadingTechLogo.png" width="50%" height="50%" alt="LeadingTechs" longdesc="images/LeadingTechLogo.png" /></a></div>
-      <div class="menu">
-        <ul>
-          <li><a href="services.html"><span><strong>Services</strong></span></a></li>
-          <li><a href="works.html"><span><strong>About Us</strong></span></a></li>
-          <li><a href="Customers.html"><span><strong>Clients</strong></span></a></li>
-          <li><a href="contact.html"><span><strong>Contact us</strong></span></a></li>
-        </ul>
-      </div>
-      <div class="clr"></div>
+    <div class="overlay"></div>
+    <div class="popup">
+        <h2>Under Construction</h2>
+        <p>We are currently working on the site. Please check back later!</p>
     </div>
-  </div>
-  <div class="slider">
-    <div class="header_text">
-      <div class="gallery">
-        <div id="slider">
-          <ul>
-            <li>
-              <div class="div"><img src="images/NetworkRack.png" width="425" height="300" alt="Network Rack" />
-                <div class="left1">
-                  <h2><strong>IT Network Solutions </strong></h2>
-                  <p>From enterprise-level infrastructures to robust connectivity options, we ensure reliable and scalable IT networks for any event size.<br />
-                  <br />
-                  </p>
-                  </a><p></p>
+
+    <div class="main">
+        <div class="header">
+            <div class="block_header">
+                <div class="logo"><img src="images/VegasTechLogo.png" width="211" height="158" alt="VegasTechs" longdesc="images/VegasTechLogo.png" /></div>
+                <div class="search">
+                    <form id="form1" name="form1" method="post" action="">
+                        <label> <span>
+                                <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+                            </span>
+                            <input name="b" type="image" src="images/search.gif" class="button" />
+                        </label>
+                    </form>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="div"><img src="images/SpeakerReady.png" width="425" height="300" alt="Speaker Ready Room"/>
-                <div class="left1">
-                  <h2><strong>Speaker-Ready Room</strong></h2>
-                  <p>Full technical assistance for speakers and virtual presenters – ensuring smooth rehearsals, setup, and live sessions.<br />
-				  <br />                    
-                  </a></p>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html" class="active"><span><strong>Home</strong></span></a></li>
+                        <li><a href="services.html"><span><strong>Services</strong></span></a></li>
+                        <li><a href="works.html"><span><strong>Careers</strong></span></a></li>
+                        <li><a href="Customers.html"><span><strong>Clients</strong></span></a></li>
+                        <li><a href="contact.html"><span><strong>Contact us</strong></span></a></li>
+                    </ul>
                 </div>
-              </div>
-            </li>
-			<li>
-			<div class="div"><img src="images/breakoutroom.png" width="425" height="300" alt="Breakout Room"/>
-                <div class="left1">
-                  <h2><strong>Breakout Room </strong></h2>
-                  <p>With fast deployments and accurate topologies, Leading Techs can deploy at ample speeds and adjust at a moments notice.<br />
-                  <br />
-                  </p>
-                  </a><p></p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="div"><img src="images/RegistrationKiosk.png" width="425" height="300" alt="Registration Kiosk" />
-                <div class="left1">
-                  <h2><strong>Event Registration</strong></h2>
-                  <p>Enhance check-in and registration with mobile kiosks, digital badges, and on-site support, making attendee management hassle-free.<br />
-				  <br />
-                  </a></p>
-                </div>
-              </div>
-            </li>
-			
-			<li>
-			<div class="div"><img src="images/StreamService.png" width="425" height="300" alt="Streaming Service"/>
-                <div class="left1">
-                  <h2><strong>Streaming Services </strong></h2>
-                  <p>Event is online only? Not a problem! We have experience with streaming events and can provide remote support for any kind of task.<br />
-                  <br />
-                  </p>
-                  </a><p></p>
-                </div>
-              </div>
-            </li>
-          </ul>
+                <div class="clr"></div>
+            </div>
         </div>
-      </div>
-      <div class="clr"></div>
-    </div>
-  </div>
-  <div class="clr"></div>
-  <div class="top_sup">
-    <div class="clr"></div>
-  </div>
-  <div class="body">
-    <div class="body_resize">
-      <div class="left">
-        <h2>Over 15 Years of Service</h2>
-		<p>Leading Techs delivers Event IT Support services for conferences, trade shows, summits, expos, showcases, and webcasts. We offer robust networking setups and deployment — from basic configurations to enterprise-grade infrastructures. Our team ensures seamless connectivity through Ethernet, fiber installation and termination, wireless, and satellite solutions, providing reliable internet access tailored to each event’s needs.</p>               
-		<p>Our Speaker-Ready and Breakout Services ensure presenters and virtual speakers have smooth, stress-free experiences with IT setup, rehearsals, slide management, and real-time technical support. We also enhance attendee management with streamlined Registration Services, including self-check-in kiosks, badge printing, and contactless check-ins, ensuring events run efficiently from start to finish.</p>
-        <p>At Leading Techs, we combine technical expertise, a commitment to excellence, and unparalleled event support to provide reliable solutions that exceed expectations — whether it’s for permanent infrastructures or high-impact events.</p>
-		<!-- <p>We specialize in large infrastructure network design and implementation. Our company has designed and installed enterprise-level networks for hundreds of hotels and offices, including trusted brands such as Marriott, Diamond Resorts International, Hilton, and Westin Hotels. Leading Techs has also provided cutting-edge solutions for social networking companies and Internet Service Providers (ISPs) like iBAHN, Guest-Tek, Blueprint RF, Single Digits, Facebook, Swisscom, Roomlinx, and AT&T. </p> -->
-		<p>&nbsp;</p>
-        <p class="test"><em>Through support of multiple vendors and products, the best solutions can be combined that will fit budgets large and small.</em><br />
-</p>
-      </div>
-      <div class="right">
-        <!-- <h2>Socials</h2> -->
-        <!-- <p> “It was truly an honor working with Paul and the rest of the Leading Techs team. I can personally guarantee doing business with Leading Techs will insure a long term, honest partnership.” </p> -->
-        <!-- <p style="float:right;"><a href="#">Daniel Reighter– <strong>Graybar</strong></a></p> -->
-        <!-- <p>&nbsp;</p> -->
-        <!-- <p>“Having worked with Leading Techs on many projects throughout   California, I am always impressed by their team. They bring unparalled   professionalism and industry experience that leaves every client   completly satisfied with their work. On every project they are willing to do whatever   it takes to exceed the expectations of their high-end clients like   Marriott and Hyatt. I am looking forward to completing future projects  with   their team.” </p> -->
-        <!-- <p style="float:right;"><a href="#">Steve Buhler– <strong>BCB Construction Inc.</strong></a></p> -->
-        <!-- <p>&nbsp;</p> -->
-        <!-- <p></p> -->
-        <h2>Social Networking</h2>
-        <div class="bg">
-          <p><a href="#"><img src="images/linkedin.jpg" border="0" alt="linked" width="23" height="23" class="floated" longdesc="images/linkedin.jpg" /></a></p>
-          <p><strong>Find us on Linked In</strong><br />
-          </p>
-          <p><a href="#"><img src="images/facebook_logo.ai_.png.jpg" border="0" alt="fb" width="23" height="23" class="floated" longdesc="images/facebook_logo.ai_.png.jpg" /></a><strong>Find us on Facebook</strong></p>
+        <div class="slider">
+            <div class="header_text">
+                <div class="gallery">
+                    <div id="slider">
+                        <ul>
+                            <li>
+                                <div class="div"><img src="images/1370680919.jpg" width="320" height="280" />
+                                    <div class="left1">
+                                        <h2><strong>Turn-Key WiFi Installation </strong></h2>
+                                        <p>Vegas Techs will complete your turn-key wireless project that will provide secure WiFi access for staff, guests, and VoIP phones in hotels, offices, apartments, condos, and medical buildings. <br />
+                                            <br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="div"><img src="images/1370680919.jpg" width="375" height="281" />
+                                    <div class="left1">
+                                        <h2><strong>Network Design & Implementation</strong></h2>
+                                        <p>Vegas Techs provides converged network design and project management for enterprise network installations and upgrades in office, conference, and hospitality environments. <br />
+                                            <br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="div"><img src="images/1370680919.jpg" width="425" height="282" alt="cabl" longdesc="images/1370680919.jpg" />
+                                    <div class="left1">
+                                        <h2><strong>Network Infrastructure</strong></h2>
+                                        <p>Vegas Techs is a CA C-10 licensed company providing professional cabling infrastructure installation in new build and pre-existing structures for Data, Voice, Video, and Sound Systems. <br />
+                                            <br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
         </div>
-        <div class="bg"></div>
-</div>
-      <div class="clr"></div>
+        <div class="clr"></div>
+        <div class="top_sup">
+            <div class="clr"></div>
+        </div>
+        <div class="body">
+            <div class="body_resize">
+                <div class="left">
+                    <h2>Who is Vegas Techs?</h2>
+                    <p>Vegas Techs is a privately held Computer Networking/IT company founded in 2013. Our headquarters is located Las Vegas, NV. We are a smaller business with about 30-50 employees. </p>
+                    <p>Vegas Techs brings together years of combined experience in Networking, WiFi, Security, and Low Voltage Cabling to provide a complete network installation and upgrade solution. </p>
+                    <p>We specialize in large infrastructure network design and implementation. Our company has designed and installed enterprise networks for hundreds of hotels and offices including Marriott, Diamond Resorts International, Hilton, and Westin Hotels. Vegas Techs has also designed and installed multiple networks for social networking companies and Internet Service Providers (ISP's) including iBAHN, Guest-Tek, Blueprint RF, Single Digits, Facebook, Swisscom, Roomlinx, and AT&T.</p>
+                    <p>&nbsp;</p>
+                    <p class="test"><em>Through support of multiple vendors and products, the best solutions can be combined that will fit budgets large and small.</em><br />
+                    </p>
+                </div>
+                <div class="right">
+                    <h2>Recommendations</h2>
+                    <p> “It was truly an honor working with Paul and the rest of the Vegas Techs team. I can personally guarantee doing business with Vegas Techs will insure a long term, honest partnership.” </p>
+                    <p style="float:right;"><a href="#">Daniel Reighter– <strong>Graybar</strong></a></p>
+                    <p>&nbsp;</p>
+                    <p>“Having worked with Vegas Techs for over a decade, I am continually impressed by their commitment to excellence, professionalism, and customer service.” </p>
+                    <p style="float:right;"><a href="#">John Smith– <strong>Tech Corp</strong></a></p>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_resize">
+                <p class="footer_text">Copyright &copy; 2024 VegasTechs. All Rights Reserved. <a href="index.html">Home</a> | <a href="contact.html">Contact</a></p>
+                <div class="clr"></div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<div class="footer">
-  <div class="footer_resize">
-    <p class="leftt">Copyright © 2024 LEADING TECHS, LLC . All Rights Reserved<br />
-      <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |</p>
-    <p class="rightt"><span class="right">Lic. </span></p>
-    <div class="clr"></div>
-  </div>
-  <div class="clr"></div>
-</div>
 </body>
+
 </html>
