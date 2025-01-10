@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>LeadingTechs - Contact Us</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=&sensor=false"></script>
+<script type="text/javascript" src="http://www.map-generator.org/map/iframejs/2c95e6cc-a9b7-432c-8b12-4571d98c3e5f?key=&width=292px&height=152px"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="block_header">
+      <div class="logo"><a href="index.html"><img src="images/LeadingTechLogo.png" width="50%" height="50%" alt="LeadingTechs" longdesc="images/LeadingTechLogo.png" /></a></div>
+      <!-- <div class="search"> -->
+        <!-- <form id="form1" name="form1" method="post" action=""> -->
+          <!-- <label> <span> -->
+            <!-- <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." /> -->
+            <!-- </span> -->
+            <!-- <input name="b" type="image" src="images/search.gif" class="button" /> -->
+          <!-- </label> -->
+        <!-- </form> -->
+      <!-- </div> -->
+      <div class="menu">
+        <ul>
+          <li><a href="services.html"><span><strong>Services</strong></span></a></li>
+          <li><a href="works.html"><span><strong>About Us</strong></span></a></li>
+          <li><a href="Customers.html"><span><strong>Clients</strong></span></a></li>
+          <li><a href="contact.html" class="active"><span><strong>Contact us</strong></span></a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="slider2">
+    <div class="header_text2">
+      <h2>Contact Information </h2>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+    <div class="body">
+    <div class="body_resize">
+<div class="left">
+<h2>Contact Us</h2>
+<p>Please feel free to contact us by filling out the information below and we will be in touch shortly.</p>
+<form action="contact.php" method="post" id="contactform">
+          <ol>
+            <li>
+              <label for="name">First Name <span class="red">*</span></label>
+              <input id="name" name="name" class="text" />
+            </li>
+            <li>
+              <label for="email">Your email <span class="red">*</span></label>
+              <input id="email" name="email" class="text" />
+            </li>
+            <li>
+              <label for="company">Company</label>
+              <input id="company" name="company" class="text" />
+            </li>
+            <li>
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" class="text" />
+            </li>
+            <li>
+              <label for="message">Message <span class="red">*</span></label>
+              <textarea id="message" name="message" rows="6" cols="50"></textarea>
+            </li>
+            <li class="buttons">
+              <input type="image" name="imageField" id="imageField" src="images/send.gif" />
+            </li>
+          </ol>
+        </form>
+</div>
+<div class="right">
+<h2>Get in touch</h2>
+<div class="bg"></div>
+<p><strong>Address</strong>: 4955 S. Durango Dr., Ste. 121, Las Vegas, NV 89113<br />
+  <strong>Telephone</strong>: 1.800.291.1649<br />
+  <strong>FAX</strong>: 1+ 702-870-6118<br />
+  <strong>E-mail</strong>: <a href="mailto:sales@leadingtechs.com">sales@leadingtechs.com</a></p>
+  <div class="bg"></div>
+  <p></p><div id ="mapid-2c95e6cc-a9b7-432c-8b12-4571d98c3e5f"></div>
+<br />
+<a href="http://www.map-generator.org/2c95e6cc-a9b7-432c-8b12-4571d98c3e5f/large-map.aspx">Enlarge Map</a><p></p>
+</div>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer_resize">
+    <p class="leftt">Copyright © 2024 LEADING TECHS, LLC . All Rights Reserved<br />
+      <a href="index.html">Home</a> | <a href="contact.html">Contact</a> |</p>
+    <p class="rightt"><span class="right">Lic. </span></p>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+</div>
+</body>
+</html>
