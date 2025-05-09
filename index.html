@@ -1,253 +1,311 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leading Tech Solutions – Your trusted partner in cutting-edge technology services. Explore innovative IT solutions tailored to drive business success." />
     <title>VegasTechs - Home</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/easySlider1.5.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        // <![CDATA[
-        $(document).ready(function () {
-            $("#slider").easySlider({
-                controlsBefore: '<p id="controls">',
-                controlsAfter: '</p>',
-                auto: true,
-                continuous: true
-            });
+    <link rel="icon" sizes="32x32" href="image/favicon.png" />
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="header.css">
 
-            // Show the popup and overlay
-            $(".popup").fadeIn();
-            $(".overlay").fadeIn();
-        });
-        // ]]>
-    </script>
+    <!-- Google Fonts (Optimized) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap">
+    </noscript>
 
-    <style type="text/css">
-        .gallery {
-            width: 890px;
-            height: 350px;
-            margin: 0 auto;
-        }
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="print" onload="this.media='all'">
+    <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-        #slider {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        #slider ul,
-        #slider li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        #slider li {
-            width: 890px;
-            height: 350px;
-            overflow: hidden;
-        }
-
-        p#controls {
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
-
-        #prevBtn {
-            display: block;
-            margin: 0;
-            overflow: hidden;
-            width: 35px;
-            height: 75px;
-            position: absolute;
-            left: -55px;
-            top: -210px;
-        }
-
-        #nextBtn {
-            display: block;
-            margin: 0;
-            overflow: hidden;
-            width: 35px;
-            height: 75px;
-            position: absolute;
-            left: 910px;
-            top: -210px;
-        }
-
-        #prevBtn a {
-            display: block;
-            width: 35px;
-            height: 75px;
-            background: url(images/l_arrow.png) no-repeat 0 0;
-        }
-
-        #nextBtn a {
-            display: block;
-            width: 35px;
-            height: 75px;
-            background: url(images/r_arrow.png) no-repeat 0 0;
-        }
-
-        /* Popup and overlay styling */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            display: none;
-            z-index: 999;
-        }
-
-        .popup {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            width: 300px;
-            height: 150px;
-            margin-left: -150px;
-            margin-top: -75px;
-            background-color: white;
-            border-radius: 8px;
-            text-align: center;
-            padding: 20px;
-            z-index: 1000;
-            display: none;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .popup h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .popup p {
-            margin-bottom: 20px;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
+    <link rel="preload" as="image" href="image/banner-img.webp">
+    <!-- JavaScript (Optimized) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+    <script src="owl.js" defer></script>
+    <style>
+        .hero-banner{position:relative;top:0}.hero-banner>div{position:relative;z-index:1}.hero-banner:after{background:linear-gradient(270deg,rgba(0,0,0,0) 19.15%,rgba(0,0,0,.76) 59.04%,rgba(0,0,0,.8) 100%),linear-gradient(180deg,rgba(0,0,0,0) 58.91%,#000 96%);content:'';position:absolute;width:100%;height:100%;z-index:0;display:block;left:0;top:0}.banner-content{padding-top:224px;width:100%;max-width:687px;color:#fff}.banner-content p{font-family:Inter;font-size:18px;font-weight:400;line-height:32px;letter-spacing:-.25999999046325684px;text-align:left;max-width:492px;margin-bottom:40px;color:#fff}.partners{width:100%;max-width:1140px;margin:100px auto 0;padding-bottom:64px}.btn-wrapper{width:100%;max-width:300px}
+        @media (min-width:768px){.partners{display:flex!important}}@media (max-width:767px){.partners .img-block img{max-width:150px;margin:auto;max-height:50px;object-fit:contain}}
+        .main-header{position:absolute;z-index:9999;width:100%;padding-top:20px;background:0 0}.main-header .container{display:flex;align-items:center;justify-content:space-between}.main-header .logo{width:224px;display:flex;align-items:center;z-index:1}.main-header nav.main-nav{display:flex;align-items:center}.main-header nav.main-nav ul{display:flex;gap:38px;list-style:none}.main-header nav.main-nav li a{color:#fff;font-size:16px;font-weight:500;text-decoration:none;transition:.3s ease-in-out}.main-header nav.main-nav li a:hover{color:#00b7ff}.hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px}.hamburger div{width:30px;height:3px;background-color:#fff;transition:.3s}@media (max-width:991px){.hamburger{display:flex;z-index:1}.main-header nav.main-nav{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,.98);flex-direction:column;align-items:center;justify-content:center;transform:translateY(-100%);transition:transform .3s}.main-header nav.main-nav ul{flex-direction:column;gap:20px}.main-header nav.main-nav.active{transform:translateY(0)}.hamburger.active div:first-child{transform:rotate(45deg) translate(5px,5px)}.hamburger.active div:nth-child(2){opacity:0}.hamburger.active div:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}header .button-block{display:none}.main-header.alt nav.main-nav{background:#fff}}.main-header.alt{padding-bottom:20px;border-bottom:1px solid #161C2D1A}.main-header.alt nav.main-nav li a{color:#161c2d}.main-header.alt .hamburger div{background-color:#161c2d}
     </style>
 </head>
 
 <body>
-    <div class="overlay"></div>
-    <div class="popup">
-        <h2>Under Construction</h2>
-        <p>We are currently working on the site. Please check back later!</p>
-    </div>
-
-    <div class="main">
-        <div class="header">
-            <div class="block_header">
-                <div class="logo"><img src="images/VegasTechLogo.png" width="211" height="158" alt="VegasTechs" longdesc="images/VegasTechLogo.png" /></div>
-                <div class="search">
-                    <form id="form1" name="form1" method="post" action="">
-                        <label> <span>
-                                <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
-                            </span>
-                            <input name="b" type="image" src="images/search.gif" class="button" />
-                        </label>
-                    </form>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html" class="active"><span><strong>Home</strong></span></a></li>
-                        <li><a href="services.html"><span><strong>Services</strong></span></a></li>
-                        <li><a href="works.html"><span><strong>Careers</strong></span></a></li>
-                        <li><a href="Customers.html"><span><strong>Clients</strong></span></a></li>
-                        <li><a href="contact.html"><span><strong>Contact us</strong></span></a></li>
-                    </ul>
-                </div>
-                <div class="clr"></div>
+    <header class="main-header">
+        <div class="container header-menus d-flex">
+            <div class="logo">
+                <a href="index.html" aria-label="home page"><img src="image/vegastech logo.svg" alt="Logo"></a>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    
+            <nav class="main-nav d-flex">
+                <ul class="d-flex">
+                    <li><a href="services.html" aria-label="serivces page">Services</a></li>
+                    <li><a href="about-us.html" aria-label="about-us page">About Us</a></li>
+                    <li><a href="clients.html" aria-label="clients page">Clients</a></li>
+                    <li><a href="careers.html" aria-label="careers page">Careers</a></li>
+                    <li><a href="contact-us.html" aria-label="contact-us page">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <div class="button-block">
+                <a class="btn" href="contact-us.html" aria-label="contact us">Let's Connect</a>
             </div>
         </div>
-        <div class="slider">
-            <div class="header_text">
-                <div class="gallery">
-                    <div id="slider">
-                        <ul>
-                            <li>
-                                <div class="div"><img src="images/1370680919.jpg" width="320" height="280" />
-                                    <div class="left1">
-                                        <h2><strong>Turn-Key WiFi Installation </strong></h2>
-                                        <p>Vegas Techs will complete your turn-key wireless project that will provide secure WiFi access for staff, guests, and VoIP phones in hotels, offices, apartments, condos, and medical buildings. <br />
-                                            <br />
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="div"><img src="images/1370680919.jpg" width="375" height="281" />
-                                    <div class="left1">
-                                        <h2><strong>Network Design & Implementation</strong></h2>
-                                        <p>Vegas Techs provides converged network design and project management for enterprise network installations and upgrades in office, conference, and hospitality environments. <br />
-                                            <br />
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="div"><img src="images/1370680919.jpg" width="425" height="282" alt="cabl" longdesc="images/1370680919.jpg" />
-                                    <div class="left1">
-                                        <h2><strong>Network Infrastructure</strong></h2>
-                                        <p>Vegas Techs is a CA C-10 licensed company providing professional cabling infrastructure installation in new build and pre-existing structures for Data, Voice, Video, and Sound Systems. <br />
-                                            <br />
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
+    </header>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+        </script>
+    <section class="hero-banner bg-img" style="background: url('image/banner.webp');">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Networking & IT Solutions for Every Industry</h1>
+                <p>Over a decade of expertise in Networking, Security, and Low Voltage Cabling - delivering tailored solutions through top vendors to fit any budget.</p>
+                <div class="btn-wrapper d-flex">
+                    <a href="services.html" class="btn" aria-label="serivces page">Explore Services</a>
+                    <a href="contact-us.html" class="btn" aria-label="contact-us page">Contact Us</a>
+                </div>
+            </div>
+            <div class="partners d-flex owl-carousel">
+                <div class="img-block"><img src="image/img1.png" alt="Vegas Tech"></div>
+                <div class="img-block"><img src="image/img2.png" alt="Vegas Tech"></div>
+                <div class="img-block"><img src="image/img3.png" alt="Vegas Tech"></div>
+                <div class="img-block"><img src="image/img4.png" alt="Vegas Tech"></div>
+                <div class="img-block"><img src="image/img5.png" alt="Vegas Tech"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="container">
+            <div class="">
+                <div class="service-content">
+                    <div class="s-content">
+                        <span class="sub-heading">What We Offer?</span>
+                        <h2>Our IT Solutions</h2>
+                        <p>At Vegas Techs, we combine experience, expertise, and customer-centric service to deliver industry-leading IT solutions.</p>
+                    </div>
+                    <div class="customOwlNav">
+                        <button class="nextBtn" aria-label="Next Slide"><svg fill=none height=55 viewBox="0 0 55 55"width=55 xmlns=http://www.w3.org/2000/svg><rect height=53 rx=26.5 stroke=white stroke-width=2 width=53 x=1 y=1 /><path d="M19.119 27.7719L22.978 31.6309C23.046 31.7102 23.131 31.7556 23.233 31.7669C23.335 31.7782 23.4285 31.7499 23.5135 31.6819C23.5985 31.6139 23.6467 31.5261 23.658 31.4184C23.6693 31.3107 23.6353 31.2172 23.556 31.1379C23.556 31.1266 23.5447 31.1096 23.522 31.0869L20.309 27.8909H35.609C35.7223 27.8909 35.8158 27.8512 35.8895 27.7719C35.9632 27.6926 36 27.6019 36 27.4999C36 27.3979 35.9632 27.3072 35.8895 27.2279C35.8158 27.1486 35.7223 27.1089 35.609 27.1089H20.309L23.522 23.9129C23.6013 23.8449 23.6467 23.7571 23.658 23.6494C23.6693 23.5417 23.6353 23.4482 23.556 23.3689C23.4767 23.2896 23.386 23.2442 23.284 23.2329C23.182 23.2216 23.0913 23.2499 23.012 23.3179L22.978 23.3689L19.119 27.2279C19.0397 27.3072 19 27.3979 19 27.4999C19 27.6019 19.0397 27.6926 19.119 27.7719Z"fill=white stroke=white stroke-width=0.5 /></svg></button>
+                        <button class="prevBtn" aria-label="Previous Slide"><svg fill=none height=55 viewBox="0 0 55 55"width=55 xmlns=http://www.w3.org/2000/svg><rect height=53 rx=26.5 stroke=white stroke-width=2 transform="matrix(-1 0 0 1 53 0)"width=53 x=-1 y=1 /><path d="M35.881 27.7719L32.022 31.6309C31.954 31.7102 31.869 31.7556 31.767 31.7669C31.665 31.7782 31.5715 31.7499 31.4865 31.6819C31.4015 31.6139 31.3533 31.5261 31.342 31.4184C31.3307 31.3107 31.3647 31.2172 31.444 31.1379C31.444 31.1266 31.4553 31.1096 31.478 31.0869L34.691 27.8909H19.391C19.2777 27.8909 19.1842 27.8512 19.1105 27.7719C19.0368 27.6926 19 27.6019 19 27.4999C19 27.3979 19.0368 27.3072 19.1105 27.2279C19.1842 27.1486 19.2777 27.1089 19.391 27.1089H34.691L31.478 23.9129C31.3987 23.8449 31.3533 23.7571 31.342 23.6494C31.3307 23.5417 31.3647 23.4482 31.444 23.3689C31.5233 23.2896 31.614 23.2442 31.716 23.2329C31.818 23.2216 31.9087 23.2499 31.988 23.3179L32.022 23.3689L35.881 27.2279C35.9603 27.3072 36 27.3979 36 27.4999C36 27.6019 35.9603 27.6926 35.881 27.7719Z"fill=white stroke=white stroke-width=0.5 /></svg></button>
+                    </div>
+                </div>
+                <div class="slider-block">
+                    <div class="owl-carousel owl-theme my-owl">
+                        <div class="item">
+                            <img src="image/Turn-Key WiFi Installation.webp" alt="Turn-Key WiFi Installation">
+                            <h3>Turn-Key WiFi Installation</h3>
+                            <p>Vegas Techs will complete your turn-key wireless project that will provide secure WiFi access for staff, guests, and VoIP phones in hotels, offices, apartments, condos, and medical buildings.</p>
+                            <a href="careers.html" aria-label="careers it network solution">
+                                Get Started
+                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.881 5.2719L14.022 9.1309C13.954 9.21023 13.869 9.25556 13.767 9.2669C13.665 9.27823 13.5715 9.2499 13.4865 9.1819C13.4015 9.1139 13.3533 9.02606 13.342 8.9184C13.3307 8.81073 13.3647 8.71723 13.444 8.6379C13.444 8.62656 13.4553 8.60956 13.478 8.5869L16.691 5.3909H1.391C1.27767 5.3909 1.18417 5.35123 1.1105 5.2719C1.03683 5.19256 1 5.1019 1 4.9999C1 4.8979 1.03683 4.80723 1.1105 4.7279C1.18417 4.64856 1.27767 4.6089 1.391 4.6089H16.691L13.478 1.4129C13.3987 1.3449 13.3533 1.25706 13.342 1.1494C13.3307 1.04173 13.3647 0.948231 13.444 0.868897C13.5233 0.789564 13.614 0.744231 13.716 0.732897C13.818 0.721564 13.9087 0.749897 13.988 0.817897L14.022 0.868897L17.881 4.7279C17.9603 4.80723 18 4.8979 18 4.9999C18 5.1019 17.9603 5.19256 17.881 5.2719Z" fill="#00B7FF" stroke="#00B7FF" stroke-width="0.5"/>
+                                    </svg>                            
+                            </a>
+                        </div>
+                        <div class="item">
+                            <img src="image/Network Design & Implementation.webp" alt="Network Design & Implementation">
+                            <h3>Network Design & Implementation</h3>
+                            <p>Vegas Techs provides converged network design and project management for enterprise network installations and upgrades in office, conference, and hospitality environments.</p>
+                            <a href="careers.html" aria-label="careers speaker ready room">
+                                Get Started
+                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.881 5.2719L14.022 9.1309C13.954 9.21023 13.869 9.25556 13.767 9.2669C13.665 9.27823 13.5715 9.2499 13.4865 9.1819C13.4015 9.1139 13.3533 9.02606 13.342 8.9184C13.3307 8.81073 13.3647 8.71723 13.444 8.6379C13.444 8.62656 13.4553 8.60956 13.478 8.5869L16.691 5.3909H1.391C1.27767 5.3909 1.18417 5.35123 1.1105 5.2719C1.03683 5.19256 1 5.1019 1 4.9999C1 4.8979 1.03683 4.80723 1.1105 4.7279C1.18417 4.64856 1.27767 4.6089 1.391 4.6089H16.691L13.478 1.4129C13.3987 1.3449 13.3533 1.25706 13.342 1.1494C13.3307 1.04173 13.3647 0.948231 13.444 0.868897C13.5233 0.789564 13.614 0.744231 13.716 0.732897C13.818 0.721564 13.9087 0.749897 13.988 0.817897L14.022 0.868897L17.881 4.7279C17.9603 4.80723 18 4.8979 18 4.9999C18 5.1019 17.9603 5.19256 17.881 5.2719Z" fill="#00B7FF" stroke="#00B7FF" stroke-width="0.5"/>
+                                    </svg>                            
+                            </a>
+                        </div>
+                        <div class="item">
+                            <img src="image/Nationwide Service.webp" alt="Nationwide Service">
+                            <h3>Nationwide Service</h3>
+                            <p>Vegas Techs is a CA C-10 licensed company providing professional cabling infrastructure installation in new build & pre-existing structures for Data, Voice, Video, & Sound Systems.</p>
+                            <a href="careers.html" aria-label="careers breakout room">
+                                Get Started
+                                <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.881 5.2719L14.022 9.1309C13.954 9.21023 13.869 9.25556 13.767 9.2669C13.665 9.27823 13.5715 9.2499 13.4865 9.1819C13.4015 9.1139 13.3533 9.02606 13.342 8.9184C13.3307 8.81073 13.3647 8.71723 13.444 8.6379C13.444 8.62656 13.4553 8.60956 13.478 8.5869L16.691 5.3909H1.391C1.27767 5.3909 1.18417 5.35123 1.1105 5.2719C1.03683 5.19256 1 5.1019 1 4.9999C1 4.8979 1.03683 4.80723 1.1105 4.7279C1.18417 4.64856 1.27767 4.6089 1.391 4.6089H16.691L13.478 1.4129C13.3987 1.3449 13.3533 1.25706 13.342 1.1494C13.3307 1.04173 13.3647 0.948231 13.444 0.868897C13.5233 0.789564 13.614 0.744231 13.716 0.732897C13.818 0.721564 13.9087 0.749897 13.988 0.817897L14.022 0.868897L17.881 4.7279C17.9603 4.80723 18 4.8979 18 4.9999C18 5.1019 17.9603 5.19256 17.881 5.2719Z" fill="#00B7FF" stroke="#00B7FF" stroke-width="0.5"/>
+                                    </svg>                            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-text-section p-sec">
+        <div class="container">
+            <div class="image-text-container">
+                <div class="image-text-image">
+                    <img src="image/IT Infrastructure.webp" alt="IT Experts Working">
+                </div>
+                <div class="image-text-content">
+                    <span class="sub-heading">ABOUT US</span>
+                    <h2>Your Trusted Partner in IT Infrastructure</h2>
+                    <p>Vegas Techs is a trusted IT solutions provider specializing in Networking, WiFi, and Security for enterprises and hospitality.</p>
+                    <ul>
+                        <li>10+ years in enterprise IT solutions</li>
+                        <li>Specialized in hospitality and corporate networking</li>
+                        <li>Trusted by brands like Marriott, Hilton & AT&T</li>
+                    </ul>
+                    <a href="about-us.html" class="btn" aria-label="Learn more about us">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="why-choose-section p-sec" style="background-image: url(image/ltbg.svg);">
+        <div class="container">
+            <div class="center">
+                <span class="sub-heading">WHY CHOOSE US?</span>
+                <h2>Why Vegas Techs?</h2>
+                <p>At Vegas Techs, we combine experience, expertise, and customer-centric service to deliver industry-leading IT solutions.</p>
+            </div>
+            <div class="why-choose-container">
+                <div class="features d-flex">
+                    <div class="feature">
+                        <div class="img-wrapper">
+                            <img src="image/vg1.svg" alt="Certified Professionals">
+                        </div>
+                        <div class="content">
+                            <h3>Enterprise-Grade Networking Solutions</h3>
+                            <p>We specialize in designing and implementing large-scale network infrastructures for businesses, hospitality, and enterprise environments, ensuring seamless connectivity.</p>
+                        </div>
+                    </div>
+                    <div class="line">&nbsp;</div>
+                    <div class="feature">
+                        <div class="img-wrapper">
+                            <img src="image/vg2.svg" alt="Unmatched Expertise in Networking">
+                        </div>
+                        <div class="content">
+                            <h3>Strategic Technology Partnerships</h3>
+                            <p>As partners with industry leaders like Cisco, HP, and Ruckus, we leverage cutting-edge technology to deliver high-performance IT solutions tailored to your needs.</p>
+                        </div>
+                    </div>
+                    <div class="line">&nbsp;</div>
+                    <div class="feature">
+                        <div class="img-wrapper">
+                            <img src="image/vg3.svg" alt="Nationwide Service">
+                        </div>
+                        <div class="content">
+                            <h3>24/7 Enterprise IT Support</h3>
+                            <p>Our dedicated support team ensures round-the-clock monitoring, troubleshooting, and maintenance, keeping your IT infrastructure running smoothly at all times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials p-sec">
+        <div class="container">
+            <span class="sub-heading">Testimonials</span>
+            <h2>What Our Clients Say</h2>
+            <div class="sliders-block">
+                <div class="owl-carousel owl-theme testimonials-owl">
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="33" viewBox="0 0 39 33" fill="none">
+                            <path d="M23.9767 33C22.7626 27.6267 22.1556 22.7097 22.1556 18.2488C22.1556 6.08295 27.6693 0 38.6965 0V6.99539C33.6381 6.99539 31.1089 9.8341 31.1089 15.5115V18.8571H39V33H23.9767ZM1.97276 33C1.26459 30.2627 0.758755 27.6774 0.455253 25.2442C0.151751 22.7097 0 20.3779 0 18.2488C0 6.08295 5.46303 0 16.3891 0V6.99539C11.5331 6.99539 9.10506 9.8341 9.10506 15.5115V18.8571H16.9961V33H1.97276Z" fill="#F15A24"/>
+                        </svg>
+                        <h3>Having worked with Vegas Techs for over a decade, I am continually impressed by their commitment to excellence, professionalism, and customer service.</h3>
+                        <p><strong>Daniel Reighter</strong></p>
+                        <p style="color:#F15A24">Graybar</p>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="33" viewBox="0 0 39 33" fill="none">
+                            <path d="M23.9767 33C22.7626 27.6267 22.1556 22.7097 22.1556 18.2488C22.1556 6.08295 27.6693 0 38.6965 0V6.99539C33.6381 6.99539 31.1089 9.8341 31.1089 15.5115V18.8571H39V33H23.9767ZM1.97276 33C1.26459 30.2627 0.758755 27.6774 0.455253 25.2442C0.151751 22.7097 0 20.3779 0 18.2488C0 6.08295 5.46303 0 16.3891 0V6.99539C11.5331 6.99539 9.10506 9.8341 9.10506 15.5115V18.8571H16.9961V33H1.97276Z" fill="#F15A24"/>
+                        </svg>
+                        <h3>It was truly an honor working with Paul and the rest of the Vegas Techs team. I can personally guarantee doing business with Vegas Techs will insure a long term, honest partnership.</h3>
+                        <p><strong>John Smith</strong></p>
+                        <p style="color:#F15A24">Tech Corp</p>
+                    </div>
+                    <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="33" viewBox="0 0 39 33" fill="none">
+                            <path d="M23.9767 33C22.7626 27.6267 22.1556 22.7097 22.1556 18.2488C22.1556 6.08295 27.6693 0 38.6965 0V6.99539C33.6381 6.99539 31.1089 9.8341 31.1089 15.5115V18.8571H39V33H23.9767ZM1.97276 33C1.26459 30.2627 0.758755 27.6774 0.455253 25.2442C0.151751 22.7097 0 20.3779 0 18.2488C0 6.08295 5.46303 0 16.3891 0V6.99539C11.5331 6.99539 9.10506 9.8341 9.10506 15.5115V18.8571H16.9961V33H1.97276Z" fill="#F15A24"/>
+                        </svg>
+                        <h3>Having worked with Vegas Techs for over a decade, I am continually impressed by their commitment to excellence, professionalism, and customer service.</h3>
+                        <p><strong>Daniel Reighter</strong></p>
+                        <p style="color:#F15A24">Graybar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lets-connect p-sec">
+        <div class="container">
+            <div class="lets-container d-flex">
+                <div class="lets-content">
+                    <h2>Have a Project in Mind? Let’s Connect!</h2>
+                    <p>Reach out to us by filling out the form, and our team will get back to you promptly with tailored IT solutions.</p>
+                    <div class="connect-block d-flex">
+                        <div class="block">
+                            <img src="image/phone.svg" alt="address">
+                            <h3>Address</h3>
+                            <a href="https://maps.app.goo.gl/RTyQ8Wx6tNKeZ7qL9" target="_blank" aria-label="address">4955 S. Durango Dr., Ste. 121, Las Vegas, NV 89113</a>
+                        </div>
+                        <div class="block">
+                            <img src="image/address.svg" alt="address">
+                            <h3>Contact</h3>
+                            <a href="mailto:sales@vegastechs.com" aria-label="email">sales@vegastechs.com</a><br>
+                            <a href="tel:18002911649" aria-label="phone">1.800.291.1649</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lets-form">
+                    <script src="https://js-na2.hsforms.net/forms/embed/241984039.js" defer></script>
+                    <div class="hs-form-frame" data-region="na2" data-form-id="81a058e7-6c21-45a8-bbb9-b108fccf9839" data-portal-id="241984039"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex">
+                <div class="footer-logo">
+                    <a href="index.html" aria-label="home page"><img src="image/vegastech logo.svg" alt="Logo"></a>
+                </div>
+                <nav class="main-nav d-flex">
+                    <ul class="d-flex">
+                        <li><a href="index.html" aria-label="home page">Home</a></li>
+                        <li><a href="about-us.html" aria-label="about us page">About Us</a></li>
+                        <li><a href="services.html" aria-label="services page">Services</a></li>
+                        <li><a href="contact-us.html" aria-label="contact-us page">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="d-flex">
+                    <div class="content">
+                        <p>Copyright © 2024 VegasTechs, LLC. All Rights Reserved</p>
+                    </div>
+                    <div class="social">
+                        <ul class="d-flex">
+                            <li><a href="#" aria-label="facebook"><img src="image/facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#" aria-label="instagram"><img src="image/instagram.svg" alt="instagram"></a></li>
+                            <li><a href="#" aria-label="twitter"><img src="image/twitter.svg" alt="twitter"></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="clr"></div>
             </div>
         </div>
-        <div class="clr"></div>
-        <div class="top_sup">
-            <div class="clr"></div>
-        </div>
-        <div class="body">
-            <div class="body_resize">
-                <div class="left">
-                    <h2>Who is Vegas Techs?</h2>
-                    <p>Vegas Techs is a privately held Computer Networking/IT company founded in 2013. Our headquarters is located Las Vegas, NV. We are a smaller business with about 30-50 employees. </p>
-                    <p>Vegas Techs brings together years of combined experience in Networking, WiFi, Security, and Low Voltage Cabling to provide a complete network installation and upgrade solution. </p>
-                    <p>We specialize in large infrastructure network design and implementation. Our company has designed and installed enterprise networks for hundreds of hotels and offices including Marriott, Diamond Resorts International, Hilton, and Westin Hotels. Vegas Techs has also designed and installed multiple networks for social networking companies and Internet Service Providers (ISP's) including iBAHN, Guest-Tek, Blueprint RF, Single Digits, Facebook, Swisscom, Roomlinx, and AT&T.</p>
-                    <p>&nbsp;</p>
-                    <p class="test"><em>Through support of multiple vendors and products, the best solutions can be combined that will fit budgets large and small.</em><br />
-                    </p>
-                </div>
-                <div class="right">
-                    <h2>Recommendations</h2>
-                    <p> “It was truly an honor working with Paul and the rest of the Vegas Techs team. I can personally guarantee doing business with Vegas Techs will insure a long term, honest partnership.” </p>
-                    <p style="float:right;"><a href="#">Daniel Reighter– <strong>Graybar</strong></a></p>
-                    <p>&nbsp;</p>
-                    <p>“Having worked with Vegas Techs for over a decade, I am continually impressed by their commitment to excellence, professionalism, and customer service.” </p>
-                    <p style="float:right;"><a href="#">John Smith– <strong>Tech Corp</strong></a></p>
-                </div>
-                <div class="clr"></div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="footer_resize">
-                <p class="footer_text">Copyright &copy; 2024 VegasTechs. All Rights Reserved. <a href="index.html">Home</a> | <a href="contact.html">Contact</a></p>
-                <div class="clr"></div>
-            </div>
-        </div>
-    </div>
+    </footer>
 </body>
-
 </html>
