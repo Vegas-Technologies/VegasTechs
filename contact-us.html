@@ -1,165 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Leading Tech Solutions. Contact us for IT consulting, project inquiries, and technology solutions to drive your business forward."/>
-    <title>VegasTechs - Contact Us</title>
-    <link rel="icon" sizes="32x32" href="/image/favicon.png"/>
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/header.css">
+---
+title: Contact Us
+description: Get in touch with Leading Tech Solutions. Contact us for IT consulting, project inquiries, and technology solutions to drive your business forward.
+stylesheet: contact-us
+alt-header: true
+---
+<section class="sub-banner alt">
+    <div class="container">
+        <div class="sub-banner-container">
+            <div class="banner-content">
+                <h1>Get In Touch</h1>
+                <p>Have questions or need expert IT solutions? We're here to help! Whether you're looking for network setup, security solutions, or IT support, our team is ready to assist you.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Google Fonts (Optimized) -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap">
-    </noscript>
-    
-    <style>
-        .contact-section{background-color:#fff;padding-top:0;padding-bottom:120px}.contact-section .lets-connect{width:45%}.contact-section .lets-form{width:100%}.contact-section h2{font-size:32px;font-weight:500;margin-top:0;margin-bottom:40px}.contact-section .image-text-image{width:48%;max-width:608px}.contact-section .contact-info .d-flex{justify-content:flex-start;gap:24px;margin-bottom:32px;align-items:flex-start}.contact-section .contact-info img{border-radius:0;position:relative;top:4px}.contact-section h5{color:#161c2d;font-size:20px;margin:0;font-family:Roboto,serif}.contact-section p{margin:0}.contact-section a{color:#161C2DB2}.map{height:236px;overflow:hidden;display:flex;align-items:center;justify-content:center;border-radius:12px;position:relative}.map .abs{position:absolute;right:10px;top:10px}.contact-section iframe{background:#fff}.contact-section .contact-info .d-flex{flex-wrap:unset}.contact-section .contact-info .d-flex .icon img{min-width:23px;max-width:23px}@media (max-width:991px){.contact-section .image-text-image{order:0}}@media (max-width:767px){.contact-section .image-text-image{width:100%}.contact-section .lets-connect{width:100%;order:-1}}
-        .main-header{position:absolute;z-index:9999;width:100%;padding-top:20px;background:0 0}.main-header .container{display:flex;align-items:center;justify-content:space-between}.main-header .logo{width:224px;display:flex;align-items:center;z-index:1}.main-header nav.main-nav{display:flex;align-items:center}.main-header nav.main-nav ul{display:flex;gap:38px;list-style:none}.main-header nav.main-nav li a{color:#fff;font-size:16px;font-weight:500;text-decoration:none;transition:.3s ease-in-out}.main-header nav.main-nav li a:hover{color:#00b7ff}.hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px}.hamburger div{width:30px;height:3px;background-color:#fff;transition:.3s}@media (max-width:991px){.hamburger{display:flex;z-index:1}.main-header nav.main-nav{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,.98);flex-direction:column;align-items:center;justify-content:center;transform:translateY(-100%);transition:transform .3s}.main-header nav.main-nav ul{flex-direction:column;gap:20px}.main-header nav.main-nav.active{transform:translateY(0)}.hamburger.active div:first-child{transform:rotate(45deg) translate(5px,5px)}.hamburger.active div:nth-child(2){opacity:0}.hamburger.active div:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}header .button-block{display:none}.main-header.alt nav.main-nav{background:#fff}}.main-header.alt{padding-bottom:20px;border-bottom:1px solid #161C2D1A}.main-header.alt nav.main-nav li a{color:#161c2d}.main-header.alt .hamburger div{background-color:#161c2d}
-    </style>
-</head>
-<body>
-    <header class="main-header alt">
-        <div class="container header-menus d-flex">
-            <div class="logo">
-                <a href="/"><img src="/image/vegastech logo.svg" alt="Logo"></a>
-            </div>
-            
-            <!-- Hamburger Menu -->
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-    
-            <nav class="main-nav d-flex">
-                <ul class="d-flex">
-                    <li><a href="/services" aria-label="Services page">Services</a></li>
-                    <li><a href="/about-us" aria-label="About us page">About Us</a></li>
-                    <li><a href="/clients" aria-label="Clients page">Clients</a></li>
-                    <li><a href="/careers" aria-label="Careers page">Careers</a></li>
-                    <li><a href="/contact-us" aria-label="Contact us page">Contact Us</a></li>
-                </ul>
-            </nav>
-            
-            <div class="button-block">
-                <a class="btn" href="/contact-us">Let's Connect</a>
-            </div>
-        </div>
-    </header>
-    <script>
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            this.classList.toggle('active');
-            document.querySelector('.main-nav').classList.toggle('active');
-        });
-        </script>
-    <section class="sub-banner alt">
-        <div class="container">
-            <div class="sub-banner-container">
-                <div class="banner-content">
-                    <h1>Get In Touch</h1>
-                    <p>Have questions or need expert IT solutions? We're here to help! Whether you're looking for network setup, security solutions, or IT support, our team is ready to assist you.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-section p-sec">
-        <div class="container">
-            <div class="image-text-container">
-                <div class="image-text-image">
-                    <h2>Contact Information</h2>
-                    <div class="contact-info">
-                        <div class="d-flex">
-                            <div class="icon">
-                                <img src="/image/adresss.svg" alt="address">
-                            </div>
-                            <div class="content">
-                                <h5>Visit Us</h5>
-                                <a href="https://maps.app.goo.gl/RTyQ8Wx6tNKeZ7qL9" target="_blank">4955 S. Durango Dr., Ste. 121, Las Vegas, NV 89113</a>
-                            </div>
+<section class="contact-section p-sec">
+    <div class="container">
+        <div class="image-text-container">
+            <div class="image-text-image">
+                <h2>Contact Information</h2>
+                <div class="contact-info">
+                    <div class="d-flex">
+                        <div class="icon">
+                            <img src="/image/adresss.svg" alt="address">
                         </div>
-                        <div class="d-flex">
-                            <div class="icon">
-                                <img src="/image/calll.svg" alt="Give Us a Call">
-                            </div>
-                            <div class="content">
-                                <h5>Give Us a Call</h5>
-                                <p><a href="tel:18002911649">Phone Number: 1.800.291.1649</a></p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="icon">
-                                <img src="/image/emaill.svg" alt="Send Us An Email">
-                            </div>
-                            <div class="content">
-                                <h5>Send Us An Email</h5>
-                                <p><a href="mailto:sales@vegastechs.com">Email: sales@vegastechs.com</a></p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="icon">
-                                <img src="/image/faxx.svg" alt="address">
-                            </div>
-                            <div class="content">
-                                <h5>FAX</h5>
-                                <p><a href="fax:+17028706118">1+ 702-870-6118</a></p>
-                            </div>
+                        <div class="content">
+                            <h5>Visit Us</h5>
+                            <a href="https://maps.app.goo.gl/RTyQ8Wx6tNKeZ7qL9" target="_blank">4955 S. Durango Dr., Ste. 121, Las Vegas, NV 89113</a>
                         </div>
                     </div>
-                    <div class="map">
-                        <a class="abs" href="https://maps.app.goo.gl/RTyQ8Wx6tNKeZ7qL9" target="_blank"><img src="/image/zoomout.svg" alt="zoom"></a>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.7616938824335!2d-115.28253652419349!3d36.09929677245524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c75e27b14659%3A0x85d8003696d46b96!2s4955%20S%20Durango%20Dr%20Ste.%20%23121%2C%20Las%20Vegas%2C%20NV%2089113%2C%20USA!5e0!3m2!1sen!2sin!4v1739527936190!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="d-flex">
+                        <div class="icon">
+                            <img src="/image/calll.svg" alt="Give Us a Call">
+                        </div>
+                        <div class="content">
+                            <h5>Give Us a Call</h5>
+                            <p><a href="tel:18002911649">Phone Number: 1.800.291.1649</a></p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon">
+                            <img src="/image/emaill.svg" alt="Send Us An Email">
+                        </div>
+                        <div class="content">
+                            <h5>Send Us An Email</h5>
+                            <p><a href="mailto:sales@vegastechs.com">Email: sales@vegastechs.com</a></p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon">
+                            <img src="/image/faxx.svg" alt="address">
+                        </div>
+                        <div class="content">
+                            <h5>FAX</h5>
+                            <p><a href="fax:+17028706118">1+ 702-870-6118</a></p>
+                        </div>
                     </div>
                 </div>
-                <div class="lets-connect">
-                    <div class="lets-container">
-                        <div class="lets-form">
-                            <h3>Send Us A Message</h3>
-                            <script src="https://js-na2.hsforms.net/forms/embed/241984039.js" defer></script>
-                            <div class="hs-form-frame" data-region="na2" data-form-id="81a058e7-6c21-45a8-bbb9-b108fccf9839" data-portal-id="241984039"></div>
-                        </div>    
-                    </div>
+                <div class="map">
+                    <a class="abs" href="https://maps.app.goo.gl/RTyQ8Wx6tNKeZ7qL9" target="_blank"><img src="/image/zoomout.svg" alt="zoom"></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.7616938824335!2d-115.28253652419349!3d36.09929677245524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c75e27b14659%3A0x85d8003696d46b96!2s4955%20S%20Durango%20Dr%20Ste.%20%23121%2C%20Las%20Vegas%2C%20NV%2089113%2C%20USA!5e0!3m2!1sen!2sin!4v1739527936190!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="lets-connect">
+                <div class="lets-container">
+                    <div class="lets-form">
+                        <h3>Send Us A Message</h3>
+                        <script src="https://js-na2.hsforms.net/forms/embed/241984039.js" defer></script>
+                        <div class="hs-form-frame" data-region="na2" data-form-id="81a058e7-6c21-45a8-bbb9-b108fccf9839" data-portal-id="241984039"></div>
+                    </div>    
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="d-flex">
-                <div class="footer-logo">
-                    <a href="/"><img src="/image/vegastech logo.svg" alt="Logo"></a>
-                </div>
-                <nav class="main-nav d-flex">
-                    <ul class="d-flex">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about-us">About Us</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/contact-us">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <hr>
-            <div class="footer-bottom">
-                <div class="d-flex">
-                    <div class="content">
-                        <p>Copyright © 2026 Leading Techs, LLC. All Rights Reserved</p>
-                    </div>
-                    <div class="social">
-                        <ul class="d-flex">
-                            <li><a href="#"><img src="/image/facebook.svg" alt="facebook"></a></li>
-                            <li><a href="#"><img src="/image/instagram.svg" alt="instagram"></a></li>
-                            <li><a href="#"><img src="/image/twitter.svg" alt="twitter"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    </div>
+</section>
