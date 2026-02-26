@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VegasTech - Modern Web Development Company">
+    <meta name="keywords" content="VegasTech, Web Development, Tailwind CSS, HTML">
+    <meta name="author" content="VegasTech">
+    <title>VegasTech | Tailwind Setup</title>
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-white shadow-sm relative z-[111]">
+        <div class="container">
+            <div class="flex items-center justify-between h-[98px]">
+
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 z-[51]">
+                    <a href="/"><img src="img/vegastechs_logo.png" alt="VegasTech Logo" class="w-[150px] md:w-[190px] lg:w-[220px]"></a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:block">
+                    <ul class="flex items-center gap-[20px] md:gap-[24px] lg:gap-[32px] text-sm font-medium text-gray-700">
+
+                        <li><a href="/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">HOME</a></li>
+
+                        <li><a href="/newabout-us.html" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">ABOUT</a></li>
+
+                        <li class="relative group">
+                            <div class="wrap">
+                                <a href="/newservices.html" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">OUR SERVICES</a>
+                                <span class="ml-1 dropsvg">
+                                    <svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                                </span>
+                            </div>
+
+                            <ul class="absolute left-0 pt-3 w-48 bg-white shadow-lg rounded-md
+                                    opacity-0 invisible group-hover:opacity-100 
+                                    group-hover:visible transition duration-200">
+                                <li><a href="/newservices.html#network-design-implementaion" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Network Design & Implementation</a></li>
+                                <li><a href="/newservices.html#nationwide-cabling-infrastructure" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Nationwide Cabling & Infrastructure</a></li>
+                                <li><a href="/newservices.html#managed-it-support" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Managed IT Support</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="relative group">
+                            <div class="wrap">
+                                <a href="javascript:void(0);" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">VT FLEX</a>
+                                <span class="ml-1 dropsvg">
+                                    <svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                                </span>
+                            </div>
+
+                            <ul class="absolute left-0 pt-3 w-48 bg-white shadow-lg rounded-md
+                                    opacity-0 invisible group-hover:opacity-100 
+                                    group-hover:visible transition duration-200">
+                                <li><a href="http://demo.vegastechs.com/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Demo</a></li>
+                                <li><a href="http://demo1.vegastechs.com/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Demo 1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/newcareer.html" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">CAREERS</a></li>
+                        <li><a href="/newcontact-us.html" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">CONTACT</a></li>
+
+                    </ul>
+                </nav>
+
+                <!-- Custom Hamburger -->
+                <button id="menuBtn" class="md:hidden flex flex-col justify-between w-7 h-6 relative z-[51]">
+                    <span class="line block h-[3px] bg-black rounded transition-all duration-300"></span>
+                    <span class="line block h-[3px] bg-black rounded transition-all duration-300"></span>
+                    <span class="line block h-[3px] bg-black rounded transition-all duration-300"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="fixed top-0 left-0 h-screen w-full bg-white z-50 transform -translate-x-full transition-transform duration-500 ease-in-out md:hidden">
+            <ul class="flex flex-col p-8 pt-[120px] space-y-6 text-[15px] font-bold text-[#393939]">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/newabout-us.html">ABOUT</a></li>
+                <li class="mobile-dropdown">
+                    <div class="flex items-center justify-between">
+                        <a href="/newservices.html" class="font-bold">OUR SERVICES</a>
+                        <button type="button" class="dropdown-toggle transition-transform duration-300">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="dropdown-menu hidden pl-4 mt-3 space-y-3 text-[15px] font-bold text-[#393939]">
+                        <li><a href="/newservices.html#network-design-implementaion">Network Design & Implementation</a></li>
+                        <li><a href="/newservices.html#nationwide-cabling-infrastructure">Nationwide Cabling & Infrastructure</a></li>
+                        <li><a href="/newservices.html#managed-it-support">Managed IT Support</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <div class="flex items-center justify-between">
+                        <a href="javascript:void(0);" class="font-bold">VT FLEX</a>
+                        <button type="button" class="dropdown-toggle transition-transform duration-300">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="dropdown-menu hidden pl-4 mt-3 space-y-3 text-[15px] font-bold text-[#393939]">
+                        <li><a href="http://demo.vegastechs.com/">Demo</a></li>
+                        <li><a href="http://demo1.vegastechs.com/">Demo 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="/newcareer.html">CAREERS</a></li>
+                <li><a href="/newcontact-us.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- Hero Section -->
+    <section class="!bg-[#ededed] !py-20 ">
+        <div class="container">
+            <div class="relative z-[2] !text-center ">
+                <h1 class="!text-[33px] md:!text-[55px] !font-montserrat !font-extrabold !text-[#1a8e9c] leading-tight max-w-[700px] !my-0 !mx-auto !mb-6 ">
+                    Shape Your Future with Vegas Techs
+                </h1>
+                <p class="text-base text-[#171717] leading-relaxed">
+                    Join Vegas Techs for hands-on careers in networking, security, and IT.<br>
+                    Grow your skills with industry certifications and nationwide projects.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Current Openings -->
+    <section class="bg-white py-16">
+        <div class="container">
+            <h2 class="!text-[32px] md:!text-[48px] !font-montserrat !font-extrabold text-secondary text-center mb-8 md:mb-14">
+                Current Openings
+            </h2>
+            <!-- Job 1 -->
+            <div class="flex flex-wrap gap-8 my-10 items-center">
+                <div class="w-full md:w-[38%]">
+                    <img src="./img/net-imple.webp" class="w-full object-cover rounded-lg flex-shrink-0"
+                        alt="Network Engineer">
+                </div>
+                <div class="w-full md:w-[55%] lg:w-[48%]">
+                    <h3 class="text-[21px] md:text-3xl font-bold text-secondary mb-6 text-[#f27b1e]">
+                        Network Implementation Engineer
+                    </h3>
+                    <p class="text-base text-muted-foreground leading-relaxed  mb-6">
+                        In this role, you will install, configure, and manage enterprise networks while traveling across
+                        the country. We seek entry to mid-level Network Technicians with a current networking
+                        certification.
+                    </p>
+
+                    <h4 class="text-base font-bold text-foreground  mb-6 !text-left">Key Requirements:</h4>
+                    <ul class="list-disc pl-5 text-base text-muted-foreground leading-relaxed space-y-1 flex-col flex gap-2">
+                        <li>Hands-on experience with networking hardware</li>
+                        <li>Strong troubleshooting and implementation skills</li>
+                        <li>Willingness to travel</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Job 2 -->
+            <div class="flex flex-wrap gap-8 my-10 items-center">
+                <div class="w-full md:w-[38%]">
+                    <img src="./img/data-cabler.webp" class="w-full object-cover rounded-lg flex-shrink-0"
+                        alt="Data Cabler">
+                </div>
+
+                <div class="w-full md:w-[55%] lg:w-[48%]">
+                    <h3 class="text-[21px] md:text-3xl font-bold text-secondary mb-6 text-[#f27b1e]">
+                        Data Cabler
+                    </h3>
+                    <p class="text-base text-muted-foreground leading-relaxed  mb-6">
+                        This position offers an opportunity to work with a team of experts to install and manage
+                        structured cabling systems. BICSI certification preferred, but not required.
+                    </p>
+
+                    <h4 class="text-base font-bold text-foreground  mb-6 !text-left">Key Requirements:</h4>
+                    <ul class="list-disc pl-5 text-base text-muted-foreground leading-relaxed space-y-1  flex-col flex gap-2">
+                        <li>Ability to install, terminate, and test Cat5e/Cat6/Fiber cables</li>
+                        <li>No prior experience needed – we provide training</li>
+                        <li>Willingness to travel</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Job 3 -->
+            <div class="flex flex-wrap gap-8 my-10 items-center">
+                <div class="w-full md:w-[38%] ">
+                    <img src="./img/contracting.webp" class="w-full  object-cover rounded-lg flex-shrink-0"
+                        alt="Contracting Jobs">
+                </div>
+
+                <div class="w-full md:w-[55%] lg:w-[48%]">
+                    <h3 class="text-[21px] md:text-3xl font-bold text-secondary mb-6 text-[#f27b1e]">
+                        Contracting Jobs
+                    </h3>
+                    <p class="text-base text-muted-foreground leading-relaxed  mb-6">
+                        If you prefer flexibility, we offer contract-based projects in enterprise network installations,
+                        primarily data cabling and physical layer networking.
+                    </p>
+
+                    <h4 class="text-base font-bold text-foreground  mb-6 !text-left">Key Requirements:</h4>
+                    <ul class="list-disc pl-5 text-base text-muted-foreground leading-relaxed space-y-1  flex-col flex gap-2">
+                        <li>Experience in IT networking or structured cabling</li>
+                        <li>Ability to manage small to large-scale projects</li>
+                        <li>Willingness to work on-site</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Work With Us -->
+    <section class="bg-[hsl(0,0%,96%)] py-16 ">
+        <div class="container ">
+            <h2 class="!text-[28px] md:!text-[48px] !font-montserrat font-extrabold text-secondary  mb-8 md:mb-12">
+                Why Work With Us?
+            </h2>
+            <div  class="flex flex-wrap gap-4 justify-center">
+                <div class="w-full sm:w-[48%] xl:w-[23%]   text-center gap-2 bg-white rounded-lg p-8 border border-border w-[200px]">
+                    <div class="text-3xl text-secondary flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7997 28.7759L11.9496 25.9846L11.0094 27.63L13.3012 30.627L14.7997 28.7759ZM10.8919 24.3097V22.253C9.01138 21.1071 8.07114 19.6967 7.24843 17.9925C6.6314 16.6703 5.72054 14.2609 6.22004 12.2923C4.42771 9.32467 5.74992 -1.98759 14.6528 0.304245C18.3844 1.27387 16.6508 1.92028 21.6165 2.21411C25.495 2.44917 26.2589 3.5657 26.3177 5.4168C26.3471 8.03184 27.8456 9.00146 25.7594 12.1454C26.8466 15.113 24.2609 19.2853 23.115 20.5488C22.4979 21.2246 21.8221 21.7829 21.0582 22.253V24.3097L22.5273 26.8073H23.7614C27.9043 26.8073 31.2833 30.1862 31.2833 34.3292V39.1185C31.2833 39.618 30.9013 40 30.4018 40H1.54822C1.04872 40 0.666748 39.618 0.666748 39.1185V34.3292C0.666748 30.1862 4.04574 26.8073 8.18867 26.8073H9.42273L10.8919 24.3097ZM12.1553 20.9601C13.4481 21.6066 14.4765 21.9591 15.975 21.9591C22.733 21.9591 25.0836 14.0553 24.0258 12.5274C23.497 11.9985 22.5861 11.734 21.2051 11.734C18.737 11.734 14.9466 12.7918 13.3306 11.7928C12.0672 10.9995 11.0682 10.4706 10.3924 10.4706C9.77532 10.4706 9.12891 10.9995 7.98299 12.5274C7.6304 13.5558 7.95361 15.3187 8.83508 17.2286C9.74594 19.1384 10.598 20.0787 12.1553 20.9601ZM12.6548 23.1344V24.1922L15.975 27.4537L19.2953 24.1922V23.1344C17.1503 23.9278 14.7997 23.9278 12.6548 23.1344ZM20.0004 25.9846L17.1503 28.7759L18.6488 30.627L20.9407 27.63L20.0004 25.9846ZM16.0044 38.2371H23.4088V35.2694C23.4088 34.0941 25.1718 34.0941 25.1718 35.2694V38.2371H29.5204V34.3292C29.5204 31.1559 26.9347 28.5702 23.7614 28.5702H22.4392L19.354 32.5956C19.0308 33.0363 18.3256 33.0657 17.973 32.625L15.975 30.0981L13.977 32.625C13.6244 33.0657 12.9193 33.0363 12.596 32.5956L9.51088 28.5702H8.18867C5.01536 28.5702 2.4297 31.1559 2.4297 34.3292V38.2371H6.77831V35.2694C6.77831 34.0941 8.54126 34.0941 8.54126 35.2694V38.2371H16.0044ZM21.2051 9.97109C22.6155 9.97109 23.732 10.2355 24.5547 10.735C25.7594 8.70764 24.6135 8.17875 24.5547 5.44618C24.5253 4.65285 24.5253 4.15335 21.5283 3.97706C16.1807 3.68323 17.5911 2.8899 14.2121 2.00843C11.3032 1.24448 9.24644 2.21411 8.10052 4.88791C7.21905 6.88592 7.18966 9.119 7.42472 10.4118C9.65779 7.85555 11.3326 8.47258 14.2708 10.2943C14.8585 10.6469 16.9447 10.3531 17.8849 10.2355C18.972 10.118 20.118 9.97109 21.2051 9.97109Z" fill="#E65E2F"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg !font-bold text-foreground my-6">Exciting Projects</h4>
+                    <p class="text-base text-muted-foreground">
+                        Work on large-scale projects ranging from $30K to $2M.
+                    </p>
+                </div>
+
+                <div class="w-full sm:w-[48%] xl:w-[23%]  text-center gap-2 bg-white rounded-lg p-6 border border-border w-[200px]">
+                    <div class="text-3xl text-secondary flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7997 28.7759L11.9496 25.9846L11.0094 27.63L13.3012 30.627L14.7997 28.7759ZM10.8919 24.3097V22.253C9.01138 21.1071 8.07114 19.6967 7.24843 17.9925C6.6314 16.6703 5.72054 14.2609 6.22004 12.2923C4.42771 9.32467 5.74992 -1.98759 14.6528 0.304245C18.3844 1.27387 16.6508 1.92028 21.6165 2.21411C25.495 2.44917 26.2589 3.5657 26.3177 5.4168C26.3471 8.03184 27.8456 9.00146 25.7594 12.1454C26.8466 15.113 24.2609 19.2853 23.115 20.5488C22.4979 21.2246 21.8221 21.7829 21.0582 22.253V24.3097L22.5273 26.8073H23.7614C27.9043 26.8073 31.2833 30.1862 31.2833 34.3292V39.1185C31.2833 39.618 30.9013 40 30.4018 40H1.54822C1.04872 40 0.666748 39.618 0.666748 39.1185V34.3292C0.666748 30.1862 4.04574 26.8073 8.18867 26.8073H9.42273L10.8919 24.3097ZM12.1553 20.9601C13.4481 21.6066 14.4765 21.9591 15.975 21.9591C22.733 21.9591 25.0836 14.0553 24.0258 12.5274C23.497 11.9985 22.5861 11.734 21.2051 11.734C18.737 11.734 14.9466 12.7918 13.3306 11.7928C12.0672 10.9995 11.0682 10.4706 10.3924 10.4706C9.77532 10.4706 9.12891 10.9995 7.98299 12.5274C7.6304 13.5558 7.95361 15.3187 8.83508 17.2286C9.74594 19.1384 10.598 20.0787 12.1553 20.9601ZM12.6548 23.1344V24.1922L15.975 27.4537L19.2953 24.1922V23.1344C17.1503 23.9278 14.7997 23.9278 12.6548 23.1344ZM20.0004 25.9846L17.1503 28.7759L18.6488 30.627L20.9407 27.63L20.0004 25.9846ZM16.0044 38.2371H23.4088V35.2694C23.4088 34.0941 25.1718 34.0941 25.1718 35.2694V38.2371H29.5204V34.3292C29.5204 31.1559 26.9347 28.5702 23.7614 28.5702H22.4392L19.354 32.5956C19.0308 33.0363 18.3256 33.0657 17.973 32.625L15.975 30.0981L13.977 32.625C13.6244 33.0657 12.9193 33.0363 12.596 32.5956L9.51088 28.5702H8.18867C5.01536 28.5702 2.4297 31.1559 2.4297 34.3292V38.2371H6.77831V35.2694C6.77831 34.0941 8.54126 34.0941 8.54126 35.2694V38.2371H16.0044ZM21.2051 9.97109C22.6155 9.97109 23.732 10.2355 24.5547 10.735C25.7594 8.70764 24.6135 8.17875 24.5547 5.44618C24.5253 4.65285 24.5253 4.15335 21.5283 3.97706C16.1807 3.68323 17.5911 2.8899 14.2121 2.00843C11.3032 1.24448 9.24644 2.21411 8.10052 4.88791C7.21905 6.88592 7.18966 9.119 7.42472 10.4118C9.65779 7.85555 11.3326 8.47258 14.2708 10.2943C14.8585 10.6469 16.9447 10.3531 17.8849 10.2355C18.972 10.118 20.118 9.97109 21.2051 9.97109Z" fill="#E65E2F"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg !font-bold text-foreground my-6">Nationwide Travel</h4>
+                    <p class="text-base text-muted-foreground">
+                        Explore the U.S. with covered travel expenses.
+                    </p>
+                </div>
+
+                <div class="w-full sm:w-[48%] xl:w-[23%]  text-center gap-2 bg-white rounded-lg p-6 border border-border w-[200px]">
+                    <div class="text-3xl text-secondary flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7997 28.7759L11.9496 25.9846L11.0094 27.63L13.3012 30.627L14.7997 28.7759ZM10.8919 24.3097V22.253C9.01138 21.1071 8.07114 19.6967 7.24843 17.9925C6.6314 16.6703 5.72054 14.2609 6.22004 12.2923C4.42771 9.32467 5.74992 -1.98759 14.6528 0.304245C18.3844 1.27387 16.6508 1.92028 21.6165 2.21411C25.495 2.44917 26.2589 3.5657 26.3177 5.4168C26.3471 8.03184 27.8456 9.00146 25.7594 12.1454C26.8466 15.113 24.2609 19.2853 23.115 20.5488C22.4979 21.2246 21.8221 21.7829 21.0582 22.253V24.3097L22.5273 26.8073H23.7614C27.9043 26.8073 31.2833 30.1862 31.2833 34.3292V39.1185C31.2833 39.618 30.9013 40 30.4018 40H1.54822C1.04872 40 0.666748 39.618 0.666748 39.1185V34.3292C0.666748 30.1862 4.04574 26.8073 8.18867 26.8073H9.42273L10.8919 24.3097ZM12.1553 20.9601C13.4481 21.6066 14.4765 21.9591 15.975 21.9591C22.733 21.9591 25.0836 14.0553 24.0258 12.5274C23.497 11.9985 22.5861 11.734 21.2051 11.734C18.737 11.734 14.9466 12.7918 13.3306 11.7928C12.0672 10.9995 11.0682 10.4706 10.3924 10.4706C9.77532 10.4706 9.12891 10.9995 7.98299 12.5274C7.6304 13.5558 7.95361 15.3187 8.83508 17.2286C9.74594 19.1384 10.598 20.0787 12.1553 20.9601ZM12.6548 23.1344V24.1922L15.975 27.4537L19.2953 24.1922V23.1344C17.1503 23.9278 14.7997 23.9278 12.6548 23.1344ZM20.0004 25.9846L17.1503 28.7759L18.6488 30.627L20.9407 27.63L20.0004 25.9846ZM16.0044 38.2371H23.4088V35.2694C23.4088 34.0941 25.1718 34.0941 25.1718 35.2694V38.2371H29.5204V34.3292C29.5204 31.1559 26.9347 28.5702 23.7614 28.5702H22.4392L19.354 32.5956C19.0308 33.0363 18.3256 33.0657 17.973 32.625L15.975 30.0981L13.977 32.625C13.6244 33.0657 12.9193 33.0363 12.596 32.5956L9.51088 28.5702H8.18867C5.01536 28.5702 2.4297 31.1559 2.4297 34.3292V38.2371H6.77831V35.2694C6.77831 34.0941 8.54126 34.0941 8.54126 35.2694V38.2371H16.0044ZM21.2051 9.97109C22.6155 9.97109 23.732 10.2355 24.5547 10.735C25.7594 8.70764 24.6135 8.17875 24.5547 5.44618C24.5253 4.65285 24.5253 4.15335 21.5283 3.97706C16.1807 3.68323 17.5911 2.8899 14.2121 2.00843C11.3032 1.24448 9.24644 2.21411 8.10052 4.88791C7.21905 6.88592 7.18966 9.119 7.42472 10.4118C9.65779 7.85555 11.3326 8.47258 14.2708 10.2943C14.8585 10.6469 16.9447 10.3531 17.8849 10.2355C18.972 10.118 20.118 9.97109 21.2051 9.97109Z" fill="#E65E2F"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg !font-bold text-foreground my-6">Hands-On Experience</h4>
+                    <p class="text-base text-muted-foreground   ">
+                        Build skills in project management & network setup.
+                    </p>
+                </div>
+
+                <div class="w-full sm:w-[48%] xl:w-[23%]  text-center gap-2 bg-white rounded-lg p-6 border border-border w-[200px]">
+                    <div class="text-3xl text-secondary flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7997 28.7759L11.9496 25.9846L11.0094 27.63L13.3012 30.627L14.7997 28.7759ZM10.8919 24.3097V22.253C9.01138 21.1071 8.07114 19.6967 7.24843 17.9925C6.6314 16.6703 5.72054 14.2609 6.22004 12.2923C4.42771 9.32467 5.74992 -1.98759 14.6528 0.304245C18.3844 1.27387 16.6508 1.92028 21.6165 2.21411C25.495 2.44917 26.2589 3.5657 26.3177 5.4168C26.3471 8.03184 27.8456 9.00146 25.7594 12.1454C26.8466 15.113 24.2609 19.2853 23.115 20.5488C22.4979 21.2246 21.8221 21.7829 21.0582 22.253V24.3097L22.5273 26.8073H23.7614C27.9043 26.8073 31.2833 30.1862 31.2833 34.3292V39.1185C31.2833 39.618 30.9013 40 30.4018 40H1.54822C1.04872 40 0.666748 39.618 0.666748 39.1185V34.3292C0.666748 30.1862 4.04574 26.8073 8.18867 26.8073H9.42273L10.8919 24.3097ZM12.1553 20.9601C13.4481 21.6066 14.4765 21.9591 15.975 21.9591C22.733 21.9591 25.0836 14.0553 24.0258 12.5274C23.497 11.9985 22.5861 11.734 21.2051 11.734C18.737 11.734 14.9466 12.7918 13.3306 11.7928C12.0672 10.9995 11.0682 10.4706 10.3924 10.4706C9.77532 10.4706 9.12891 10.9995 7.98299 12.5274C7.6304 13.5558 7.95361 15.3187 8.83508 17.2286C9.74594 19.1384 10.598 20.0787 12.1553 20.9601ZM12.6548 23.1344V24.1922L15.975 27.4537L19.2953 24.1922V23.1344C17.1503 23.9278 14.7997 23.9278 12.6548 23.1344ZM20.0004 25.9846L17.1503 28.7759L18.6488 30.627L20.9407 27.63L20.0004 25.9846ZM16.0044 38.2371H23.4088V35.2694C23.4088 34.0941 25.1718 34.0941 25.1718 35.2694V38.2371H29.5204V34.3292C29.5204 31.1559 26.9347 28.5702 23.7614 28.5702H22.4392L19.354 32.5956C19.0308 33.0363 18.3256 33.0657 17.973 32.625L15.975 30.0981L13.977 32.625C13.6244 33.0657 12.9193 33.0363 12.596 32.5956L9.51088 28.5702H8.18867C5.01536 28.5702 2.4297 31.1559 2.4297 34.3292V38.2371H6.77831V35.2694C6.77831 34.0941 8.54126 34.0941 8.54126 35.2694V38.2371H16.0044ZM21.2051 9.97109C22.6155 9.97109 23.732 10.2355 24.5547 10.735C25.7594 8.70764 24.6135 8.17875 24.5547 5.44618C24.5253 4.65285 24.5253 4.15335 21.5283 3.97706C16.1807 3.68323 17.5911 2.8899 14.2121 2.00843C11.3032 1.24448 9.24644 2.21411 8.10052 4.88791C7.21905 6.88592 7.18966 9.119 7.42472 10.4118C9.65779 7.85555 11.3326 8.47258 14.2708 10.2943C14.8585 10.6469 16.9447 10.3531 17.8849 10.2355C18.972 10.118 20.118 9.97109 21.2051 9.97109Z" fill="#E65E2F"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg !font-bold text-foreground my-6">Cutting-Edge Tech</h4>
+                    <p class="text-base text-muted-foreground   ">
+                        Work with Cisco, HP, Ruckus, Motorola, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- People & Culture -->
+    <section class="bg-[#ededed] py-16  peopleCulturBlock">
+        <div class="container ">
+            <h2 class="!text-[32px] md:!text-[35px] !font-montserrat font-extrabold mb-6 !text-[#f47c20]">
+                People & Culture
+            </h2>
+            <p class="text-[20px] !text-center text-muted-foreground leading-relaxed mb-12">
+                At VegasTechs, our people are our differentiator. Here's how we build a workplace where talent thrives.
+            </p>
+            <div class="flex flex-wrap gap-6 justify-center">
+                <div class="bg-[#fff] rounded-lg  shadow-[0_0_8px_#f47c2073] p-7 text-left border border-border W-full md:w-[48%]">
+                    <span class="text-3xl mb-3 block text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="100px" width="100px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+                            <style type="text/css"> .st0{fill:#e65e2f;}</style> <g>  <path class="st0" d="M485.08,404.527h2.564l10.002-117.716L512,256.324l-4.436-65.503c1.08-13.604-10.862-21.261-18.3-24.398   l-13.544,33.481l-3.66-28.927l2.26-1.788l-0.607-7.868l5.583-1.966c-0.574-0.809-0.928-1.586-0.928-2.252c0-1.838,0-4.141,0-7.278   c2.226-2.622,3.913-7.944,4.908-13.966c1.4-0.54,2.311-1.349,3.509-7.682c0.826-4.47-0.49-7.228-0.793-7.228   c0.556-4.057,1.315-12.077-0.674-16.1c0,0,1.366-2.614,1.366-6.097c-5.735,0.868-24.053-11.614-29.518-1.451   c-7.944-0.878-12.667,11.006-9.075,23.648c0,0-4.452-0.219-2.665,6.384c1.653,6.216,3.003,7.632,5.33,8.526   c1.012,6.022,2.682,11.344,4.909,13.966c0,3.138,0,5.44,0,7.278c0,0.396-0.118,0.818-0.32,1.274l7.219,2.555l-0.641,8.256   l2.26,1.788l-3.761,29.838l-17.036-33.903c-2.412,0.911-5.448,2.125-8.568,3.661l-5.735,42.64l-2.48-36.745   c1.4-17.71-15.332-27.173-24.119-30.454c-0.54-0.202-1.113-0.464-1.721-0.793l-14.101,34.881l-3.98-31.457l2.463-1.957   l-0.675-8.543l6.578-2.32c-0.034-0.168-0.068-0.329-0.068-0.489c0-2.235,0-5.035,0-8.872c2.699-3.196,4.757-9.69,5.988-17.035   c1.704-0.658,2.817-1.653,4.267-9.37c1.03-5.456-0.573-8.813-0.978-8.813c0.691-4.95,1.636-14.733-0.81-19.642   c0,0,1.67-3.188,1.67-7.438c-7,1.054-29.35-14.169-36.028-1.771c-9.665-1.071-15.433,13.435-11.048,28.851   c0,0-5.431-0.278-3.256,7.793c2.024,7.573,3.66,9.302,6.51,10.39c1.232,7.346,3.273,13.839,5.988,17.035c0,3.382,0,5.946,0,8.046   l9.057,3.214l-0.691,8.964l2.446,1.957l-4.1,32.444l-17.727-35.294c-0.168,0.076-0.337,0.152-0.489,0.22   c-4.588,1.704-14.186,5.094-22.012,10.441l-7.809,58.073l-3.609-53.384v-0.008c0.135-1.687,0.068-3.315-0.152-4.866   c-2.21-17.179-23.243-26.768-33.076-30.529l-19.633,41.72l-4.858-38.44l2.986-2.378l-0.844-10.946l8.096-2.868   c0-2.597,0-5.844,0-10.272c3.171-3.744,5.583-11.352,7.017-19.97c3.34-1.257,5.246-3.29,7.641-12.17   c2.53-9.454-3.829-9.125-3.829-9.125c5.144-18.073-1.619-35.05-12.954-33.802c-7.826-14.522-34.004,3.314-42.201,2.074   c0,4.976,1.957,8.712,1.957,8.712c-2.851,5.744-1.754,17.222-0.945,23.016c-0.472-0.008-6.224,0.059-3.778,9.125   c2.396,8.88,4.284,10.913,7.641,12.17c1.434,8.618,3.828,16.226,7,19.97c0,4.428,0,7.675,0,10.272l9.563,3.382l-0.809,10.432   l3.002,2.378l-5.178,40.937l-20.814-44.217c-10.745,4.09-34.814,15.138-33.228,35.396l-2.699,39.975l-6.004-44.656   c-7.826-5.346-17.44-8.737-22.012-10.441c-0.168-0.068-0.338-0.144-0.506-0.22l-17.727,35.294l-4.1-32.444l2.446-1.957   l-0.692-8.964l9.057-3.214c0-2.1,0-4.664,0-8.046c2.699-3.196,4.773-9.69,5.988-17.035c2.85-1.088,4.486-2.817,6.527-10.39   c2.159-8.071-3.272-7.793-3.272-7.793c4.385-15.416-1.382-29.922-11.048-28.851c-6.679-12.398-29.028,2.825-36.028,1.771   c0,4.25,1.67,7.438,1.67,7.438c-2.428,4.909-1.501,14.692-0.809,19.642c-0.405,0-2.008,3.357-0.978,8.813   c1.467,7.717,2.563,8.712,4.284,9.37c1.214,7.346,3.255,13.839,5.971,17.035c0,3.838,0,6.638,0,8.872   c0,0.16-0.034,0.32-0.051,0.489l6.562,2.32l-0.674,8.543l2.462,1.957l-3.964,31.457l-14.117-34.881   c-0.608,0.329-1.198,0.591-1.721,0.793c-8.787,3.281-25.503,12.743-24.103,30.454l-2.496,36.821l-5.752-42.716   c-3.103-1.536-6.139-2.75-8.551-3.661L51.58,200.823l-3.762-29.847l2.26-1.788l-0.641-8.256l7.236-2.555   c-0.219-0.456-0.338-0.878-0.338-1.274c0-1.838,0-4.141,0-7.278c2.21-2.622,3.914-7.944,4.909-13.966   c2.345-0.894,3.677-2.31,5.346-8.526c1.771-6.603-2.665-6.384-2.665-6.384c3.593-12.642-1.147-24.525-9.074-23.648   c-5.466-10.163-23.8,2.319-29.535,1.451c0,3.483,1.366,6.097,1.366,6.097c-1.99,4.022-1.23,12.043-0.657,16.1   c-0.32,0-1.636,2.758-0.793,7.228c1.181,6.334,2.092,7.143,3.492,7.682c1.012,6.022,2.682,11.344,4.908,13.966   c0,3.138,0,5.44,0,7.278c0,0.666-0.337,1.442-0.91,2.252l5.566,1.966l-0.624,7.868l2.26,1.788l-3.642,28.911l-13.545-33.464   c-7.438,3.138-19.38,10.795-18.318,24.398L0,256.324l14.354,30.487l10.019,117.716h2.563l-0.05,1.805l-15.299,17.525l5.094,6.367   l30.597-10.213v-15.484h1.501l0.22-87.363l17.407,87.363h4.115l0.168,1.113l-2.968,15.265l6.275,9.124l12.076-0.911l4.739-9.799   l-1.434-14.793h1.434l-7.168-117.716l5.347-11.351l8.518,18.098l12.212,143.598h3.12l-0.051,2.202l-18.654,21.37l6.224,7.776   l37.31-12.474v-18.874h1.821l0.287-106.574l21.236,106.574h5.01l0.22,1.358l-3.626,18.63l7.64,11.123l14.742-1.121l5.785-11.951   l-1.754-18.04h1.754l-8.754-143.598l10.441-22.172l12.667,26.936v154.696h3.829l-0.017,0.81l-23.294,26.7l7.759,9.707   l46.604-15.576v-21.641l14.623-111.314l14.64,111.314h1.502v21.641l46.586,15.576l7.776-9.707l-23.31-26.7l-0.018-0.81h2.345   V298.323l14.016-29.804l11.807,25.039l-8.754,143.598h1.754l-1.754,18.04l5.768,11.951l14.742,1.121l7.658-11.123l-3.644-18.63   l0.22-1.358h5.01l21.252-106.574l0.27,106.574h1.821v18.874l37.327,12.474l6.207-7.776l-18.654-21.37l-0.051-2.202h3.12   l12.212-143.598l8.518-18.098l5.347,11.351l-7.168,117.716h1.434l-1.434,14.793l4.739,9.799l12.076,0.911l6.275-9.124   l-2.968-15.265l0.168-1.113h4.116l17.406-87.363l0.236,87.363h1.502v15.484l30.58,10.213l5.094-6.367l-15.299-17.525   L485.08,404.527z"/>
+                            </g>
+                        </svg>
+                    </span>
+                    <h4 class="text-lg font-bold text-foreground my-6 !text-left">Our Team Spirit</h4>
+                    <p class="text-base text-muted-foreground   ">
+                        We work collaboratively across projects – from small installs to large deployments – with mutual
+                        respect and clear communication.
+                    </p>
+                </div>
+                <div class="bg-[#fff] rounded-lg  shadow-[0_0_8px_#f47c2073] p-7 text-left border border-border W-full md:w-[48%]">
+                    <span class="text-3xl mb-3 block text-primary"><svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 6.3500002 6.3500002" id="svg1976" version="1.1">
+                                <defs id="defs1970"/>
+                                <g id="layer1" style="display:inline">
+                                    <path d="m 0.26485,5.8204456 a 0.2645835,0.2645835 0 0 0 -0.26563,0.26563 0.2645835,0.2645835 0 0 0 0.26563,0.26367 h 5.82031 a 0.2645835,0.2645835 0 0 0 0.26562,-0.26367 0.2645835,0.2645835 0 0 0 -0.26562,-0.26563 z" id="path726" style="color: #e65e2f;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color: #e65e2f;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill: #e65e2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"/>
+                                    <path d="m 1.16328,3.9688856 c -0.34722,0 -0.63476,0.28754 -0.63476,0.63477 v 1.48242 a 0.26460996,0.26460996 0 0 0 0.26562,0.26367 h 1.0586 a 0.26460996,0.26460996 0 0 0 0.26367,-0.26367 v -1.48242 c 0,-0.34723 -0.28755,-0.63477 -0.63477,-0.63477 z" id="path728" style="color: #e65e2f;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill: #e65e2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"/>
+                                    <path d="m 3.0168,3.0684956 c -0.34722,0 -0.63477,0.28753 -0.63477,0.63477 v 2.38281 a 0.26460996,0.26460996 0 0 0 0.26367,0.26367 h 1.0586 a 0.26460996,0.26460996 0 0 0 0.26367,-0.26367 v -2.38281 c 0,-0.34724 -0.28755,-0.63477 -0.63477,-0.63477 z" id="path730" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill: #e65e2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"/>
+                                    <path d="m 4.86836,2.2755256 c -0.34722,0 -0.63477,0.28754 -0.63477,0.63477 v 3.17578 a 0.26460996,0.26460996 0 0 0 0.26368,0.26367 h 1.05859 a 0.26460996,0.26460996 0 0 0 0.26563,-0.26367 v -3.17578 c 0,-0.34723 -0.2895,-0.63477 -0.63672,-0.63477 z" id="path732" style="color: #e65e2f;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill: #e65e2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"/>
+                                    <path d="M 4.6205208,2.5237e-4 A 0.2645835,0.2645835 0 0 0 4.3564534,0.26380219 0.2645835,0.2645835 0 0 0 4.6205208,0.52941905 H 4.8938883 C 3.3974791,1.8159538 1.8306324,2.6151331 0.2161369,2.9142865 A 0.2645835,0.2645835 0 0 0 0.0052984,3.2227949 0.2645835,0.2645835 0 0 0 0.3117388,3.4357016 C 2.050091,3.1136013 3.722697,2.2498105 5.2923138,0.88753671 V 1.1991456 A 0.2645835,0.2645835 0 0 0 5.5558626,1.4647625 0.2645835,0.2645835 0 0 0 5.8214805,1.1991456 V 0.41986501 C 5.8215308,0.19150501 5.62816,2.0237e-4 5.3998008,2.5237e-4 Z" id="path734" style="color: #e65e2f;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill: #e65e2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"/>
+                                </g>
+                                </svg>
+                    </span>
+                    <h4 class="text-lg font-bold text-foreground my-6 !text-left">Growth Through Learning</h4>
+                    <p class="text-base leading-normal text-muted-foreground">
+                        We invest in your development through certifications, mentorship and exposure to modern tools.
+                    </p>
+                </div>
+                <div class="bg-[#fff] rounded-lg  shadow-[0_0_8px_#f47c2073] p-7 text-left border border-border W-full md:w-[48%]">
+                    <span class="text-3xl mb-3 block text-primary"><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="100px" height="100px" viewBox="0 0 32 32" version="1.1">
+                        <title>sign-language</title>
+                        <path d="M14.753 19.926c-0.179-0.106-0.396-0.168-0.626-0.168-0.46 0-0.862 0.249-1.079 0.619l-0.003 0.006c-0.83 1.422-2.349 2.361-4.087 2.361-2.594 0-4.699-2.094-4.717-4.683v-0.002l0.119-1.070c0.488-2.124 2.362-3.685 4.601-3.685 1.737 0 3.255 0.939 4.073 2.338l0.012 0.022c0.22 0.376 0.622 0.624 1.082 0.624 0.69 0 1.25-0.56 1.25-1.25 0-0.231-0.062-0.446-0.171-0.632l0.003 0.006c-0.932-1.579-2.402-2.755-4.153-3.287l-0.051-0.013 5.803-3.876c0.337-0.227 0.555-0.608 0.555-1.039 0-0.69-0.559-1.25-1.25-1.25-0.259 0-0.499 0.079-0.699 0.213l0.004-0.003-6.529 4.361 4.457-6.83c0.127-0.193 0.203-0.429 0.203-0.684 0-0.691-0.56-1.25-1.25-1.25-0.436 0-0.82 0.223-1.044 0.562l-0.003 0.005-6.211 9.517 0.686-6.179c0.005-0.041 0.007-0.088 0.007-0.136 0-0.69-0.56-1.25-1.25-1.25-0.641 0-1.17 0.483-1.241 1.105l-0.001 0.006-1.348 12.151c-0.049 0.235-0.055 0.483-0.081 0.726l-0.069 0.623c-0.001 0.011 0.004 0.021 0.003 0.032-0 0.036-0.011 0.069-0.011 0.105 0 0.001 0 0.001 0 0.002 0 3.987 3.232 7.219 7.219 7.219 2.659 0 4.982-1.437 6.234-3.577l0.018-0.034c0.106-0.179 0.168-0.395 0.168-0.626 0-0.46-0.248-0.861-0.618-1.078l-0.006-0.003zM30.256 14.104c0.001-0.011-0.004-0.021-0.003-0.032 0-0.036 0.011-0.069 0.011-0.105-0.001-3.989-3.235-7.223-7.224-7.223-2.659 0-4.983 1.437-6.237 3.576l-0.018 0.034c-0.106 0.18-0.168 0.396-0.168 0.626 0 0.691 0.56 1.251 1.25 1.251 0.46 0 0.862-0.248 1.079-0.619l0.003-0.006c0.831-1.422 2.351-2.362 4.090-2.362 2.596 0 4.702 2.095 4.721 4.686v0.002l-0.119 1.070c-0.488 2.126-2.363 3.689-4.604 3.689-1.738 0-3.257-0.94-4.076-2.34l-0.012-0.022c-0.221-0.374-0.622-0.621-1.080-0.621-0.69 0-1.25 0.56-1.25 1.25 0 0.228 0.061 0.442 0.168 0.627l-0.003-0.006c0.932 1.581 2.404 2.759 4.158 3.291l0.051 0.013-5.808 3.878c-0.337 0.227-0.555 0.608-0.555 1.039 0 0.69 0.56 1.25 1.25 1.25 0.259 0 0.499-0.079 0.699-0.213l-0.004 0.003 6.538-4.366-4.462 6.839c-0.127 0.192-0.202 0.428-0.202 0.682 0 0.691 0.56 1.25 1.25 1.25 0.436 0 0.819-0.223 1.043-0.56l0.003-0.005 6.216-9.527-0.687 6.185c-0.005 0.042-0.008 0.090-0.008 0.139 0 0.641 0.483 1.17 1.105 1.241l0.006 0.001c0.040 0.005 0.086 0.008 0.133 0.008 0.003 0 0.005 0 0.008-0h-0c0.641-0 1.169-0.484 1.24-1.106l0.001-0.006 1.35-12.158c0.036-0.207 0.065-0.46 0.081-0.717l0.001-0.021z" style="&#10;    fill: #e65e2f;&#10;"/>
+                        </svg>
+                    </span>
+                    <h4 class="text-lg font-bold text-foreground my-6 !text-left">Inclusive Culture</h4>
+                    <p class="text-base leading-normal text-muted-foreground">
+                      Diverse perspectives fuel better solutions. We create an environment where every voice matters and people from all backgrounds can succeed.
+                    </p>
+                </div>
+                <div class="bg-[#fff] rounded-lg  shadow-[0_0_8px_#f47c2073] p-7 text-left border border-border W-full md:w-[48%]">
+                    <span class="text-3xl mb-3 block text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#e65e2f" height="100px" width="100px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve" style="&#10;    fill: #e65e2f;&#10;">
+                            <g><g><path d="M509.166,83.861l-61.253-59.584c-3.706-3.606-9.634-3.523-13.239,0.183l-38.169,39.237    c-3.606,3.707-3.523,9.634,0.183,13.239l9.481,9.223l-12.651,13.007c-3.185,3.275-3.113,8.51,0.161,11.696l30.433,29.603    c3.275,3.185,8.511,3.112,11.696-0.161l12.651-13.007l9.481,9.223c3.706,3.606,9.634,3.523,13.239-0.183l38.168-39.237    C512.954,93.394,512.872,87.467,509.166,83.861z M429.718,122.842l-18.575-18.069l6.885-7.077l18.575,18.069L429.718,122.842z"/>
+                                </g></g>
+                            <g><g><path d="M386.068,145.607l-10.87-73.012c-1.238-8.323-8.982-14.068-17.317-12.827c-8.323,1.24-14.067,8.992-12.827,17.317    l9.778,65.667l-35.263,37.147c-15.81,0-28.345,0-44.253,0l-38.931-48.693L225.253,90.22l-21.367,37.603l3.917,14.422    c0.547,2.013,1.502,3.893,2.804,5.522c50.538,63.21,45.01,56.326,45.86,57.308v116.363l-22.247,52.645    c-1.478,3.497-1.831,7.37-1.009,11.076l17.29,77.968c2.185,9.852,11.94,16.08,21.811,13.893    c9.86-2.188,16.08-11.952,13.893-21.811l-16.027-72.269c22.985-54.392,22.531-57.013,22.531-57.013h7.891v146.158    c0,10.099,8.186,18.285,18.285,18.285c10.099,0,18.285-8.186,18.285-18.285l0.008-266.475l44.87-47.268    C385.276,154.942,386.76,150.244,386.068,145.607z"/>
+                                </g></g>
+                            <g><g>  <circle cx="296.656" cy="138.25" r="31.578"/></g>
+                            </g><g><g><path d="M103.112,80.4c-18.627,0-33.727,15.1-33.727,33.727c-0.001,18.627,15.099,33.727,33.727,33.727    c18.472,0,33.727-14.975,33.727-33.727C136.839,95.549,121.772,80.4,103.112,80.4z"/>
+                                </g></g>
+                            <g><g><path d="M218.889,67.38c4.442-7.815,1.707-17.749-6.107-22.189c-7.815-4.443-17.749-1.707-22.189,6.108l-60.315,106.145h0.142    c-11.858,30.978-8.806,23.005-20.618,53.863l4.757-22.405c0.334-1.573,0.092-3.215-0.683-4.624l-6.531-11.879l5.807-10.561    c0.864-1.572-0.275-3.503-2.071-3.503H95.143c-1.794,0-2.938,1.928-2.071,3.503l5.807,10.561l-6.556,11.923    c-0.76,1.383-1.008,2.99-0.701,4.538l4.158,22.448c-5.786-14.84-2.935-9.028-17.706-46.911l-6.116,1.004L34.791,140.64    l13.788-56.372c2.136-8.73-3.21-17.538-11.941-19.673C27.913,62.46,19.1,67.804,16.965,76.536L0.467,143.989    c-1.627,6.652,1.084,13.612,6.785,17.409l51.994,34.641c0.121,0.08,0.246,0.149,0.367,0.226v118.293h0.018    c-0.001,0.067-0.01,0.131-0.01,0.198v156.09c0,10.786,8.743,19.528,19.528,19.528c10.784,0,19.528-8.743,19.528-19.528V314.754    c0-0.067-0.009-0.131-0.01-0.198h8.452c-0.001,0.067-0.01,0.131-0.01,0.198v156.09c0,10.786,8.743,19.528,19.528,19.528    s19.528-8.743,19.528-19.528v-156.09c0-1.251-0.13-2.469-0.354-3.654c0-16.944,0-117.537,0-117.537S157.96,173.613,218.889,67.38z    "/>
+                                </g></g>
+                        </svg>
+                    </span>
+                    <h4 class="text-lg font-bold text-foreground my-6 !text-left">Celebrating Wins Together</h4>
+                    <p class="text-base leading-normal text-muted-foreground">
+                       Project launches, safety milestones, and personal achievements — we celebrate as a team with shoutouts, small events, and recognition programs.
+                    </p>
+                </div>
+                <div class="bg-[#fff] rounded-lg  shadow-[0_0_8px_#f47c2073] p-7 text-left border border-border W-full md:w-[48%]">
+                    <span class="text-3xl mb-3 block text-primary">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#e65e2f" version="1.1" id="Layer_1" width="100px" height="100px" viewBox="0 0 256 173" xml:space="preserve">
+                                <path d="M128.253,56.864c15.186,0,27.432-12.247,27.432-27.432S143.536,2,128.253,2  c-15.186,0-27.432,12.247-27.432,27.432C100.918,44.716,113.165,56.864,128.253,56.864z M64.571,136.32h-49.28  c-15.969,0-16.851-24.395,0.294-24.395H58.3l24.493-36.054c7.25-9.895,15.48-14.598,27.138-14.598h36.544  c11.659,0,19.888,4.311,27.138,14.598l24.591,36.054h43.01c17.243,0,16.165,24.395,0.588,24.395h-49.28  c-3.919,0-8.622-1.372-11.365-5.584l-18.811-26.844l-0.098,67.209H94.844l-0.098-67.209l-18.811,26.844  C73.192,134.85,68.49,136.32,64.571,136.32z"/>
+                                <path d="M223.729,103.771C240.387,103.771,254,90.248,254,73.5s-13.524-30.271-30.271-30.271  s-30.182,13.613-30.182,30.361C193.547,90.248,207.07,103.771,223.729,103.771z M222.057,76.067  c-5.553-1.94-9.016-4.747-9.016-9.732c0-4.597,3.045-8.21,8.628-9.344v-4.986h4.179v4.747c3.463,0,5.971,0.716,7.822,1.702  l-1.702,5.971c-1.373-0.567-3.612-1.523-6.687-1.523c-3.075,0-4.747,1.523-4.747,3.045c0,2.09,1.94,2.896,6.12,4.597  c5.702,2.09,8.359,4.986,8.359,9.732s-2.896,8.359-9.016,9.732v4.747h-4.179v-4.597c-3.612,0-7.254-0.955-9.016-1.94l1.523-6.12  c1.94,0.955,4.986,2.09,8.21,2.09c3.463,0,5.165-1.523,5.165-3.612S226.057,77.62,222.057,76.067z"/>
+                                <path d="M54.468,75.815c6.637-5.836,7.464-16.004,1.603-22.766l0,0c-5.836-6.637-16.004-7.464-22.766-1.603L31,53.45  l-2.304-2.004c-6.637-5.836-16.931-5.034-22.766,1.603l0,0C0.069,59.711,0.895,69.98,7.532,75.815l23.092,23.668L54.468,75.815z"/>
+                                <g id="shopping_cart"> </g><g id="cross"></g> <g id="leaf">  </g> 
+                         </svg>
+                    </span>
+                    <h4 class="text-lg font-bold text-foreground my-6 !text-left">Work‑Life Harmony</h4>
+                    <p class="text-base leading-normal text-muted-foreground">
+                        For roles involving travel, we prioritise flexible schedules, rota planning and clear time-off policies so you can balance career and life.
+                    </p>
+                </div>
+                <div class="bg-[#fff] rounded-lg  shadow-[0_0_8px_#f47c2073] p-7 text-left border border-border W-full md:w-[48%]">
+                    <span class="w-full text-3xl mb-3 block text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#e65e2f" width="100px" height="100px" viewBox="0 0 36 36">
+                            <title>employee_solid</title>
+                            <g id="aad88ad3-6d51-4184-9840-f392d18dd002" data-name="Layer 3">
+                                <circle cx="16.86" cy="9.73" r="6.46"/>
+                                <rect x="21" y="28" width="7" height="1.4"/>
+                                <path d="M15,30v3a1,1,0,0,0,1,1H33a1,1,0,0,0,1-1V23a1,1,0,0,0-1-1H26V20.53a1,1,0,0,0-2,0V22H22V18.42A32.12,32.12,0,0,0,16.86,18a26,26,0,0,0-11,2.39,3.28,3.28,0,0,0-1.88,3V30Zm17,2H17V24h7v.42a1,1,0,0,0,2,0V24h6Z"/>
+                            </g>
+                        </svg>
+                    </span>
+                    <h4 class="text-lg font-bold text-foreground my-6 !text-left">Employee Voices</h4>
+                    <p class="text-base leading-normal text-muted-foreground">
+                        Hear from our team — short quotes and employee spotlights humanize the page and give candidates a real sense of life at VegasTechs.                
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#171717] pt-[50px]">
+        <div class="flex max-w-[1100px] w-[100%] m-auto px-[20px] flex-wrap md:flex-nowrap">
+            <div class="block px-[0px] py-[20px] lg:p-[20px] my-[20px] w-[100%] md:w-[26%] lg:w-[24%] text-center">
+                <div class="icon w-[20px] mx-auto mb-[10px]">
+                    <svg fill="#fc9547" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M576 112C576 103.7 571.7 96 564.7 91.6C557.7 87.2 548.8 86.8 541.4 90.5L416.5 152.1L244 93.4C230.3 88.7 215.3 89.6 202.1 95.7L77.8 154.3C69.4 158.2 64 166.7 64 176L64 528C64 536.2 68.2 543.9 75.1 548.3C82 552.7 90.7 553.2 98.2 549.7L225.5 489.8L396.2 546.7C409.9 551.3 424.7 550.4 437.8 544.2L562.2 485.7C570.6 481.7 576 473.3 576 464L576 112zM208 146.1L208 445.1L112 490.3L112 191.3L208 146.1zM256 449.4L256 148.3L384 191.8L384 492.1L256 449.4zM432 198L528 150.6L528 448.8L432 494L432 198z"/></svg>
+                </div>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>ADDRESS</strong></p>
+                <p class="!text-[#939393] text-[14px] line-[1.7]">4955 S. Durango Dr., Ste. 121, <br>Las Vegas, NV 89113</p>
+            </div>
+            <div class="block px-[4px] py-[20px] lg:p-[20px] my-[20px] w-[100%] md:w-[24%] text-center">
+                <div class="icon w-[20px] mx-auto mb-[10px]">
+                    <svg fill="#b184bb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
+                </div>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>GET OUR LATEST OFFERS</strong></p>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><a class="!text-[#fc9547]" href="mailto:sales@vegastechs.com">sales@vegastechs.com</a></p>
+            </div>
+            <div class="block p-[20px] my-[20px] w-[100%] md:w-[22%] lg:w-[24%] text-center">
+                <div class="icon w-[20px] mx-auto mb-[10px]">
+                    <svg fill="#b184bb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM248 192.7C257.8 190 268.1 195.1 272 204.5L292.3 253.2C295.7 261.5 293.4 271 286.4 276.7L264.3 294.7C280.5 330.5 308.8 359.7 343.9 377.1L363.2 353.5C368.9 346.6 378.4 344.2 386.7 347.6L435.4 367.9C444.8 371.8 449.8 382.1 447.2 391.9L446.4 394.7C437.6 427 406.3 454.6 368.2 446.5C280.7 428 211.9 359.1 193.3 271.6C185.2 233.5 212.8 202.2 245.1 193.4L247.9 192.6z"/></svg>
+                </div>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>CONTACT</strong></p>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><a class="!text-[#fc9547]" href="tel:7028706116">(702)870-6116</a></p>
+            </div>
+            <div class="block py-[20px] my-[20px] w-[100%] md:w-[28%]">
+                <div class="icon w-[80px] gap-[40px] flex mx-auto mb-[10px]">
+                    <a href="https://www.facebook.com/vegastechs/" style="width: 20px;"><svg fill="#939393" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L258.2 544L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96z"/></svg></a>
+                    <a href="https://x.com/vegastechs" style="width: 20px;"><svg fill="#939393" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM457.1 180L353.3 298.6L475.4 460L379.8 460L305 362.1L219.3 460L171.8 460L282.8 333.1L165.7 180L263.7 180L331.4 269.5L409.6 180L457.1 180zM419.3 431.6L249.4 206.9L221.1 206.9L392.9 431.6L419.3 431.6z"/></svg></a>
+                </div>
+                <p class="!text-white text-[16px] line-[1.7] text-center max-w-[224px] m-auto">Copyright © 2024 VegasTechs, LLC. All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="footer-bottom border-t-[2px] mt-[40px] border-white px-[20px]">
+            <div class="flex max-w-[1100px] w-[100%] m-auto py-[20px] justify-between flex-wrap md:flex-nowrap">
+                <div class="logo w-[100%] md:w-auto"><a href="/" class="flex justify-center mb-[6px] md:mb-[0px]"><img src="img/vegastechs_logo.png" alt="VegasTech Logo" class="w-[150px] md:w-[190px] lg:w-[220px]"></a></div>
+                <ul class="flex w-[100%] md:w-auto text-[16px] text-white items-center justify-center">
+                    <li class="mx-[14px]"><a href="/" class="hover:text-orange-500 transition">Home</a></li>
+                    <li class="mx-[14px]"><a href="/newservices.html" class="hover:text-orange-500 transition">Our Services</a></li>
+                    <li class="mx-[14px]"><a href="/newcontact-us.html" class="hover:text-orange-500 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const lines = menuBtn.querySelectorAll(".line");
+
+    menuBtn.addEventListener("click", () => {
+        document.body.classList.toggle("overflow-hidden");
+
+        mobileMenu.classList.toggle("-translate-x-full");
+
+        lines[0].classList.toggle("rotate-45");
+        lines[0].classList.toggle("translate-y-[11px]");
+
+        lines[1].classList.toggle("opacity-0");
+
+        lines[2].classList.toggle("-rotate-45");
+        lines[2].classList.toggle("-translate-y-[10px]");
+    });
+
+    // 🔥 Dropdown Script
+    document.querySelectorAll(".mobile-dropdown").forEach((dropdown) => {
+
+        const toggleBtn = dropdown.querySelector(".dropdown-toggle");
+        const menu = dropdown.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", function (e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            menu.classList.toggle("hidden");
+            toggleBtn.classList.toggle("rotate-180");
+
+        });
+
+    });
+
+});
+
+
+
+
+const boxes = document.querySelectorAll('.box');
+function checkInView() {
+  boxes.forEach(box => {
+    const rect = box.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      box.classList.add('in-view');
+    } else {
+      box.classList.remove('in-view');
+    }
+  });
+}
+window.addEventListener('scroll', checkInView);
+checkInView();
+
+</script>
+
+</body>
+</html>

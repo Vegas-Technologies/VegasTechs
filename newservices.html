@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VegasTech - Modern Web Development Company">
+    <meta name="keywords" content="VegasTech, Web Development, Tailwind CSS, HTML">
+    <meta name="author" content="VegasTech">
+    <title>VegasTech | Tailwind Setup</title>
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="bg-white shadow-sm relative z-[111]">
+        <div class="container">
+            <div class="flex items-center justify-between h-[98px]">
+
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 z-[51]">
+                    <a href="/"><img src="img/vegastechs_logo.png" alt="VegasTech Logo" class="w-[150px] md:w-[190px] lg:w-[220px]"></a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:block">
+                    <ul class="flex items-center gap-[20px] md:gap-[24px] lg:gap-[32px] text-sm font-medium text-gray-700">
+
+                        <li><a href="/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">HOME</a></li>
+
+                        <li><a href="/newabout-us.html" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">ABOUT</a></li>
+
+                        <li class="relative group">
+                            <div class="wrap">
+                                <a href="/newservices.html" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">OUR SERVICES</a>
+                                <span class="ml-1 dropsvg">
+                                    <svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                                </span>
+                            </div>
+
+                            <ul class="absolute left-0 pt-3 w-48 bg-white shadow-lg rounded-md
+                                    opacity-0 invisible group-hover:opacity-100 
+                                    group-hover:visible transition duration-200">
+                                <li><a href="#network-design-implementaion" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Network Design & Implementation</a></li>
+                                <li><a href="#nationwide-cabling-infrastructure" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Nationwide Cabling & Infrastructure</a></li>
+                                <li><a href="#managed-it-support" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Managed IT Support</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="relative group">
+                            <div class="wrap">
+                                <a href="javascript:void(0);" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">VT FLEX</a>
+                                <span class="ml-1 dropsvg">
+                                    <svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                                </span>
+                            </div>
+
+                            <ul class="absolute left-0 pt-3 w-48 bg-white shadow-lg rounded-md
+                                    opacity-0 invisible group-hover:opacity-100 
+                                    group-hover:visible transition duration-200">
+                                <li><a href="http://demo.vegastechs.com/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Demo</a></li>
+                                <li><a href="http://demo1.vegastechs.com/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Demo 1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/newcareer.html" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">CAREERS</a></li>
+                        <li><a href="/newcontact-us.html" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">CONTACT</a></li>
+
+                    </ul>
+                </nav>
+
+                <!-- Custom Hamburger -->
+                <button id="menuBtn" class="md:hidden flex flex-col justify-between w-7 h-6 relative z-[51]">
+                    <span class="line block h-[3px] bg-black rounded transition-all duration-300"></span>
+                    <span class="line block h-[3px] bg-black rounded transition-all duration-300"></span>
+                    <span class="line block h-[3px] bg-black rounded transition-all duration-300"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="fixed top-0 left-0 h-screen w-full bg-white z-50 transform -translate-x-full transition-transform duration-500 ease-in-out md:hidden">
+            <ul class="flex flex-col p-8 pt-[120px] space-y-6 text-[15px] font-bold text-[#393939]">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/newabout-us.html">ABOUT</a></li>
+                <li class="mobile-dropdown">
+                    <div class="flex items-center justify-between">
+                        <a href="/newservices.html" class="font-bold">OUR SERVICES</a>
+                        <button type="button" class="dropdown-toggle transition-transform duration-300">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="dropdown-menu hidden pl-4 mt-3 space-y-3 text-[15px] font-bold text-[#393939]">
+                        <li><a href="#network-design-implementaion">Network Design & Implementation</a></li>
+                        <li><a href="#nationwide-cabling-infrastructure">Nationwide Cabling & Infrastructure</a></li>
+                        <li><a href="#managed-it-support">Managed IT Support</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <div class="flex items-center justify-between">
+                        <a href="javascript:void(0);" class="font-bold">VT FLEX</a>
+                        <button type="button" class="dropdown-toggle transition-transform duration-300">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="dropdown-menu hidden pl-4 mt-3 space-y-3 text-[15px] font-bold text-[#393939]">
+                        <li><a href="http://demo.vegastechs.com/">Demo</a></li>
+                        <li><a href="http://demo1.vegastechs.com/">Demo 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="/newcareer.html">CAREERS</a></li>
+                <li><a href="/newcontact-us.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 flex items-center justify-center bg-cover bg-center overflow-hidden"
+        style="background-image: url('img/banner-1.webp');">
+        <div class="absolute inset-0 bg-[#171717] opacity-[0.7]"></div>
+
+        <div class="relative z-[2] text-center px-6">
+            <h1 class="text-[36px] md:text-[55px] leading-normal font-extrabold text-white mb-[30px] font-montserrat">
+                Our IT Services
+            </h1>
+            <p class="text-white text-lg !font-lato">
+                Comprehensive IT solutions designed for businesses of all sizes, across every industry.
+            </p>
+        </div>
+    </section>
+
+    <!-- Service 1 -->
+    <section class="py-20" id="network-design-implementaion">
+        <div class="container">
+            <div class="flex flex-wrap  gap-10 justify-center items-center">
+                <div class="w-full md:w-[38%]">
+                    <img src="img/net-imple.webp" alt="Network Design" class="w-full  object-cover rounded" />
+                </div>
+                <div class="w-full md:w-[49%] ">
+                    <h2 class="!text-2xl font-extrabold !text-black !text-left !font-montserrat mb-6">
+                        Network Design &amp; Implementation
+                    </h2>
+
+                    <p class="text-base font-lato text-gray-600 leading-relaxed mb-4">
+                        We design and deploy <strong>scalable, robust enterprise networks</strong> – from initial
+                        planning to full-scale implementation. Ideal for office environments, conference centers, and
+                        hospitality setups.
+                    </p>
+
+                    <h4 class="text-lg !text-left !font-montserrat font-bold text-black mb-4 mt-4">
+                        Pain Points Solved:
+                    </h4>
+                    <ul class="ml-[18px] flex flex-col  gap-3  text-gray-600 leading-loose mb-4 list-disc">
+                        <li class="!text-base !font-lato">Outdated or overloaded networks</li>
+                        <li class="!text-base !font-lato">Bottlenecks during peak usage</li>
+                        <li class="!text-base !font-lato">Security gaps in legacy systems</li>
+                    </ul>
+
+                    <h4 class="text-lg !text-left !font-montserrat font-bold text-black mb-4 mt-4">
+                        Benefits Delivered:
+                    </h4>
+                    <ul class="ml-[18px] flex flex-col  gap-3  text-gray-600 leading-loose  list-disc">
+                        <li class="!text-base !font-lato">Tailor-made infrastructure ready for growth</li>
+                        <li class="!text-base !font-lato">Enhanced uptime and performance</li>
+                        <li class="!text-base !font-lato">Proactive monitoring and support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 2 -->
+    <section class="bg-gray-100 py-20" id="nationwide-cabling-infrastructure">
+        <div class="container">
+            <div class="flex flex-wrap  flex-row md:flex-row-reverse gap-10 justify-center items-center">
+
+                <div class="w-full md:w-[38%]">
+                    <img src="img/data-cabler.webp" alt="Cabling" class="w-full  object-cover rounded" />
+                </div>
+
+                <div class="w-full md:w-[49%]">
+                    <h2 class="!text-2xl font-extrabold !text-black !text-left !font-montserrat mb-4">
+                        Nationwide Cabling &amp; Infrastructure
+                    </h2>
+
+                    <p class="text-base font-lato text-gray-600 leading-relaxed mb-4">
+                        As a <strong>CA C-10 licensed provider</strong>, we offer end-to-end structured cabling services
+                        – data, voice, video, and sound systems in both new and existing structures.
+                    </p>
+
+                    <h4 class="text-lg !text-left !font-montserrat font-bold text-black mb-4 mt-4">
+                        Pain Points Solved:
+                    </h4>
+                    <ul class="ml-[18px] flex flex-col  gap-3  text-gray-600 leading-loose mb-4 list-disc">
+                        <li class="!text-base !font-lato">Tangled, mess-prone cable setups</li>
+                        <li class="!text-base !font-lato">Unplanned cabling that needs redo</li>
+                        <li class="!text-base !font-lato">Frequent connection failures</li>
+                    </ul>
+
+                    <h4 class="text-lg !text-left !font-montserrat font-bold text-black mb-4 mt-4">
+                        Benefits Delivered:
+                    </h4>
+                    <ul class="ml-[18px] flex flex-col  gap-3  text-gray-600 leading-loose mb-2 list-disc">
+                        <li class="!text-base !font-lato">Neat, future-proof cabling</li>
+                        <li class="!text-base !font-lato">Long-term reliability</li>
+                        <li class="!text-base !font-lato">Code-compliant installations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3 -->
+    <section class="bg-white py-20" id="managed-it-support">
+        <div class="container">
+            <div class="flex flex-wrap gap-10 justify-center items-center">
+
+                <div class="w-full md:w-[38%]">
+                    <img src="img/contracting.webp" alt="Managed IT Support" class="w-full  object-cover rounded" />
+                </div>
+
+                <div class="w-full md:w-[49%]">
+                    <h2 class="!text-2xl font-extrabold !text-black !text-left !font-montserrat mb-4 ">
+                        Managed IT Support
+                    </h2>
+
+                    <p class="text-base font-lato text-gray-600 leading-relaxed mb-4 ">
+                        Acting as your extended IT team, we offer <strong>proactive monitoring and round-the-clock
+                            support</strong> to resolve issues fast and prevent downtime.
+                    </p>
+
+                    <h4 class="text-lg !text-left !font-montserrat font-bold text-black mb-4 mt-4">
+                        Pain Points Solved:
+                    </h4>
+                    <ul class="ml-[18px] flex flex-col  gap-3  text-gray-600 leading-loose mb-4 list-disc">
+                        <li class="!text-base !font-lato">Expensive in-house IT staffing</li>
+                        <li class="!text-base !font-lato">Slow issue resolution</li>
+                        <li class="!text-base !font-lato">Reactive problem handling</li>
+                    </ul>
+
+                    <h4 class="text-lg !text-left !font-montserrat font-bold text-black mb-4 mt-4">
+                        Benefits Delivered:
+                    </h4>
+                    <ul class="ml-[18px] flex flex-col  gap-3  text-gray-600 leading-loose mb-2 list-disc">
+                        <li class="!text-base !font-lato">Always-on support</li>
+                        <li class="!text-base !font-lato">Faster resolution times</li>
+                        <li class="!text-base !font-lato">Affordable, scalable IT management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#ededed] py-20">
+        <div class="container">
+            <h2 class="!text-3xl md:!text-5xl my-0 md:my-5 pb-7 font-extrabold !text-black !font-montserrat mb-8 !text-black">
+                Why Work With Us?
+            </h2>
+            <div class="flex flex-wrap gap-10 sm:gap-12 justify-center">
+                <!-- Item 1 -->
+                <div class="w-full sm:w-[45%] xl:w-1/5">
+                    <div class="mb-2 text-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7997 28.7759L11.9496 25.9846L11.0094 27.63L13.3012 30.627L14.7997 28.7759ZM10.8919 24.3097V22.253C9.01138 21.1071 8.07114 19.6967 7.24843 17.9925C6.6314 16.6703 5.72054 14.2609 6.22004 12.2923C4.42771 9.32467 5.74992 -1.98759 14.6528 0.304245C18.3844 1.27387 16.6508 1.92028 21.6165 2.21411C25.495 2.44917 26.2589 3.5657 26.3177 5.4168C26.3471 8.03184 27.8456 9.00146 25.7594 12.1454C26.8466 15.113 24.2609 19.2853 23.115 20.5488C22.4979 21.2246 21.8221 21.7829 21.0582 22.253V24.3097L22.5273 26.8073H23.7614C27.9043 26.8073 31.2833 30.1862 31.2833 34.3292V39.1185C31.2833 39.618 30.9013 40 30.4018 40H1.54822C1.04872 40 0.666748 39.618 0.666748 39.1185V34.3292C0.666748 30.1862 4.04574 26.8073 8.18867 26.8073H9.42273L10.8919 24.3097ZM12.1553 20.9601C13.4481 21.6066 14.4765 21.9591 15.975 21.9591C22.733 21.9591 25.0836 14.0553 24.0258 12.5274C23.497 11.9985 22.5861 11.734 21.2051 11.734C18.737 11.734 14.9466 12.7918 13.3306 11.7928C12.0672 10.9995 11.0682 10.4706 10.3924 10.4706C9.77532 10.4706 9.12891 10.9995 7.98299 12.5274C7.6304 13.5558 7.95361 15.3187 8.83508 17.2286C9.74594 19.1384 10.598 20.0787 12.1553 20.9601ZM12.6548 23.1344V24.1922L15.975 27.4537L19.2953 24.1922V23.1344C17.1503 23.9278 14.7997 23.9278 12.6548 23.1344ZM20.0004 25.9846L17.1503 28.7759L18.6488 30.627L20.9407 27.63L20.0004 25.9846ZM16.0044 38.2371H23.4088V35.2694C23.4088 34.0941 25.1718 34.0941 25.1718 35.2694V38.2371H29.5204V34.3292C29.5204 31.1559 26.9347 28.5702 23.7614 28.5702H22.4392L19.354 32.5956C19.0308 33.0363 18.3256 33.0657 17.973 32.625L15.975 30.0981L13.977 32.625C13.6244 33.0657 12.9193 33.0363 12.596 32.5956L9.51088 28.5702H8.18867C5.01536 28.5702 2.4297 31.1559 2.4297 34.3292V38.2371H6.77831V35.2694C6.77831 34.0941 8.54126 34.0941 8.54126 35.2694V38.2371H16.0044ZM21.2051 9.97109C22.6155 9.97109 23.732 10.2355 24.5547 10.735C25.7594 8.70764 24.6135 8.17875 24.5547 5.44618C24.5253 4.65285 24.5253 4.15335 21.5283 3.97706C16.1807 3.68323 17.5911 2.8899 14.2121 2.00843C11.3032 1.24448 9.24644 2.21411 8.10052 4.88791C7.21905 6.88592 7.18966 9.119 7.42472 10.4118C9.65779 7.85555 11.3326 8.47258 14.2708 10.2943C14.8585 10.6469 16.9447 10.3531 17.8849 10.2355C18.972 10.118 20.118 9.97109 21.2051 9.97109Z" fill="#E65E2F"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl my-4 font-bold text-foreground !text-left !font-montserrat">
+                        Licensed & Certified
+                    </h4>
+                    <p class="text-lg !text-left !font-lato text-muted-foreground leading-normal">
+                        Trusted and compliant
+                    </p>
+                </div>
+                <!-- Item 2 -->
+                <div class="w-full sm:w-[45%]  xl:w-1/5">
+                    <div class="mb-2 text-secondary">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7997 28.7759L11.9496 25.9846L11.0094 27.63L13.3012 30.627L14.7997 28.7759ZM10.8919 24.3097V22.253C9.01138 21.1071 8.07114 19.6967 7.24843 17.9925C6.6314 16.6703 5.72054 14.2609 6.22004 12.2923C4.42771 9.32467 5.74992 -1.98759 14.6528 0.304245C18.3844 1.27387 16.6508 1.92028 21.6165 2.21411C25.495 2.44917 26.2589 3.5657 26.3177 5.4168C26.3471 8.03184 27.8456 9.00146 25.7594 12.1454C26.8466 15.113 24.2609 19.2853 23.115 20.5488C22.4979 21.2246 21.8221 21.7829 21.0582 22.253V24.3097L22.5273 26.8073H23.7614C27.9043 26.8073 31.2833 30.1862 31.2833 34.3292V39.1185C31.2833 39.618 30.9013 40 30.4018 40H1.54822C1.04872 40 0.666748 39.618 0.666748 39.1185V34.3292C0.666748 30.1862 4.04574 26.8073 8.18867 26.8073H9.42273L10.8919 24.3097ZM12.1553 20.9601C13.4481 21.6066 14.4765 21.9591 15.975 21.9591C22.733 21.9591 25.0836 14.0553 24.0258 12.5274C23.497 11.9985 22.5861 11.734 21.2051 11.734C18.737 11.734 14.9466 12.7918 13.3306 11.7928C12.0672 10.9995 11.0682 10.4706 10.3924 10.4706C9.77532 10.4706 9.12891 10.9995 7.98299 12.5274C7.6304 13.5558 7.95361 15.3187 8.83508 17.2286C9.74594 19.1384 10.598 20.0787 12.1553 20.9601ZM12.6548 23.1344V24.1922L15.975 27.4537L19.2953 24.1922V23.1344C17.1503 23.9278 14.7997 23.9278 12.6548 23.1344ZM20.0004 25.9846L17.1503 28.7759L18.6488 30.627L20.9407 27.63L20.0004 25.9846ZM16.0044 38.2371H23.4088V35.2694C23.4088 34.0941 25.1718 34.0941 25.1718 35.2694V38.2371H29.5204V34.3292C29.5204 31.1559 26.9347 28.5702 23.7614 28.5702H22.4392L19.354 32.5956C19.0308 33.0363 18.3256 33.0657 17.973 32.625L15.975 30.0981L13.977 32.625C13.6244 33.0657 12.9193 33.0363 12.596 32.5956L9.51088 28.5702H8.18867C5.01536 28.5702 2.4297 31.1559 2.4297 34.3292V38.2371H6.77831V35.2694C6.77831 34.0941 8.54126 34.0941 8.54126 35.2694V38.2371H16.0044ZM21.2051 9.97109C22.6155 9.97109 23.732 10.2355 24.5547 10.735C25.7594 8.70764 24.6135 8.17875 24.5547 5.44618C24.5253 4.65285 24.5253 4.15335 21.5283 3.97706C16.1807 3.68323 17.5911 2.8899 14.2121 2.00843C11.3032 1.24448 9.24644 2.21411 8.10052 4.88791C7.21905 6.88592 7.18966 9.119 7.42472 10.4118C9.65779 7.85555 11.3326 8.47258 14.2708 10.2943C14.8585 10.6469 16.9447 10.3531 17.8849 10.2355C18.972 10.118 20.118 9.97109 21.2051 9.97109Z" fill="#E65E2F"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl my-4 font-bold text-foreground !text-left !font-montserrat">
+                        Nationwide Reach
+                    </h4>
+                    <p class="text-lg !text-left !font-lato text-muted-foreground leading-normal">
+                        Infrastructure across industries
+                    </p>
+                </div>
+                <!-- Item 3 -->
+                <div class="w-full sm:w-[45%]  xl:w-1/5">
+                    <div class="mb-2 text-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7997 28.7759L11.9496 25.9846L11.0094 27.63L13.3012 30.627L14.7997 28.7759ZM10.8919 24.3097V22.253C9.01138 21.1071 8.07114 19.6967 7.24843 17.9925C6.6314 16.6703 5.72054 14.2609 6.22004 12.2923C4.42771 9.32467 5.74992 -1.98759 14.6528 0.304245C18.3844 1.27387 16.6508 1.92028 21.6165 2.21411C25.495 2.44917 26.2589 3.5657 26.3177 5.4168C26.3471 8.03184 27.8456 9.00146 25.7594 12.1454C26.8466 15.113 24.2609 19.2853 23.115 20.5488C22.4979 21.2246 21.8221 21.7829 21.0582 22.253V24.3097L22.5273 26.8073H23.7614C27.9043 26.8073 31.2833 30.1862 31.2833 34.3292V39.1185C31.2833 39.618 30.9013 40 30.4018 40H1.54822C1.04872 40 0.666748 39.618 0.666748 39.1185V34.3292C0.666748 30.1862 4.04574 26.8073 8.18867 26.8073H9.42273L10.8919 24.3097ZM12.1553 20.9601C13.4481 21.6066 14.4765 21.9591 15.975 21.9591C22.733 21.9591 25.0836 14.0553 24.0258 12.5274C23.497 11.9985 22.5861 11.734 21.2051 11.734C18.737 11.734 14.9466 12.7918 13.3306 11.7928C12.0672 10.9995 11.0682 10.4706 10.3924 10.4706C9.77532 10.4706 9.12891 10.9995 7.98299 12.5274C7.6304 13.5558 7.95361 15.3187 8.83508 17.2286C9.74594 19.1384 10.598 20.0787 12.1553 20.9601ZM12.6548 23.1344V24.1922L15.975 27.4537L19.2953 24.1922V23.1344C17.1503 23.9278 14.7997 23.9278 12.6548 23.1344ZM20.0004 25.9846L17.1503 28.7759L18.6488 30.627L20.9407 27.63L20.0004 25.9846ZM16.0044 38.2371H23.4088V35.2694C23.4088 34.0941 25.1718 34.0941 25.1718 35.2694V38.2371H29.5204V34.3292C29.5204 31.1559 26.9347 28.5702 23.7614 28.5702H22.4392L19.354 32.5956C19.0308 33.0363 18.3256 33.0657 17.973 32.625L15.975 30.0981L13.977 32.625C13.6244 33.0657 12.9193 33.0363 12.596 32.5956L9.51088 28.5702H8.18867C5.01536 28.5702 2.4297 31.1559 2.4297 34.3292V38.2371H6.77831V35.2694C6.77831 34.0941 8.54126 34.0941 8.54126 35.2694V38.2371H16.0044ZM21.2051 9.97109C22.6155 9.97109 23.732 10.2355 24.5547 10.735C25.7594 8.70764 24.6135 8.17875 24.5547 5.44618C24.5253 4.65285 24.5253 4.15335 21.5283 3.97706C16.1807 3.68323 17.5911 2.8899 14.2121 2.00843C11.3032 1.24448 9.24644 2.21411 8.10052 4.88791C7.21905 6.88592 7.18966 9.119 7.42472 10.4118C9.65779 7.85555 11.3326 8.47258 14.2708 10.2943C14.8585 10.6469 16.9447 10.3531 17.8849 10.2355C18.972 10.118 20.118 9.97109 21.2051 9.97109Z" fill="#E65E2F"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl my-4 font-bold text-foreground !text-left !font-montserrat">
+                        Customer-first Philosophy
+                    </h4>
+                    <p class="text-lg !text-left !font-lato text-muted-foreground leading-normal">
+                        Tailored solutions that fit your needs
+                    </p>
+                </div>
+                <!-- Item 4 -->
+                <div class="w-full sm:w-[45%]  xl:w-1/5">
+                    <div class="mb-2 text-secondary">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7997 28.7759L11.9496 25.9846L11.0094 27.63L13.3012 30.627L14.7997 28.7759ZM10.8919 24.3097V22.253C9.01138 21.1071 8.07114 19.6967 7.24843 17.9925C6.6314 16.6703 5.72054 14.2609 6.22004 12.2923C4.42771 9.32467 5.74992 -1.98759 14.6528 0.304245C18.3844 1.27387 16.6508 1.92028 21.6165 2.21411C25.495 2.44917 26.2589 3.5657 26.3177 5.4168C26.3471 8.03184 27.8456 9.00146 25.7594 12.1454C26.8466 15.113 24.2609 19.2853 23.115 20.5488C22.4979 21.2246 21.8221 21.7829 21.0582 22.253V24.3097L22.5273 26.8073H23.7614C27.9043 26.8073 31.2833 30.1862 31.2833 34.3292V39.1185C31.2833 39.618 30.9013 40 30.4018 40H1.54822C1.04872 40 0.666748 39.618 0.666748 39.1185V34.3292C0.666748 30.1862 4.04574 26.8073 8.18867 26.8073H9.42273L10.8919 24.3097ZM12.1553 20.9601C13.4481 21.6066 14.4765 21.9591 15.975 21.9591C22.733 21.9591 25.0836 14.0553 24.0258 12.5274C23.497 11.9985 22.5861 11.734 21.2051 11.734C18.737 11.734 14.9466 12.7918 13.3306 11.7928C12.0672 10.9995 11.0682 10.4706 10.3924 10.4706C9.77532 10.4706 9.12891 10.9995 7.98299 12.5274C7.6304 13.5558 7.95361 15.3187 8.83508 17.2286C9.74594 19.1384 10.598 20.0787 12.1553 20.9601ZM12.6548 23.1344V24.1922L15.975 27.4537L19.2953 24.1922V23.1344C17.1503 23.9278 14.7997 23.9278 12.6548 23.1344ZM20.0004 25.9846L17.1503 28.7759L18.6488 30.627L20.9407 27.63L20.0004 25.9846ZM16.0044 38.2371H23.4088V35.2694C23.4088 34.0941 25.1718 34.0941 25.1718 35.2694V38.2371H29.5204V34.3292C29.5204 31.1559 26.9347 28.5702 23.7614 28.5702H22.4392L19.354 32.5956C19.0308 33.0363 18.3256 33.0657 17.973 32.625L15.975 30.0981L13.977 32.625C13.6244 33.0657 12.9193 33.0363 12.596 32.5956L9.51088 28.5702H8.18867C5.01536 28.5702 2.4297 31.1559 2.4297 34.3292V38.2371H6.77831V35.2694C6.77831 34.0941 8.54126 34.0941 8.54126 35.2694V38.2371H16.0044ZM21.2051 9.97109C22.6155 9.97109 23.732 10.2355 24.5547 10.735C25.7594 8.70764 24.6135 8.17875 24.5547 5.44618C24.5253 4.65285 24.5253 4.15335 21.5283 3.97706C16.1807 3.68323 17.5911 2.8899 14.2121 2.00843C11.3032 1.24448 9.24644 2.21411 8.10052 4.88791C7.21905 6.88592 7.18966 9.119 7.42472 10.4118C9.65779 7.85555 11.3326 8.47258 14.2708 10.2943C14.8585 10.6469 16.9447 10.3531 17.8849 10.2355C18.972 10.118 20.118 9.97109 21.2051 9.97109Z" fill="#E65E2F"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl my-4 font-bold text-foreground !text-left !font-montserrat">
+                        Dependable Delivery
+                    </h4>
+                    <p class="text-lg !text-left !font-lato text-muted-foreground leading-normal">
+                        On-time, safe, and within budget
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#171717] pt-[50px]">
+        <div class="flex max-w-[1100px] w-[100%] m-auto px-[20px] flex-wrap md:flex-nowrap">
+            <div class="block px-[0px] py-[20px] lg:p-[20px] my-[20px] w-[100%] md:w-[26%] lg:w-[24%] text-center">
+                <div class="icon w-[20px] mx-auto mb-[10px]">
+                    <svg fill="#fc9547" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M576 112C576 103.7 571.7 96 564.7 91.6C557.7 87.2 548.8 86.8 541.4 90.5L416.5 152.1L244 93.4C230.3 88.7 215.3 89.6 202.1 95.7L77.8 154.3C69.4 158.2 64 166.7 64 176L64 528C64 536.2 68.2 543.9 75.1 548.3C82 552.7 90.7 553.2 98.2 549.7L225.5 489.8L396.2 546.7C409.9 551.3 424.7 550.4 437.8 544.2L562.2 485.7C570.6 481.7 576 473.3 576 464L576 112zM208 146.1L208 445.1L112 490.3L112 191.3L208 146.1zM256 449.4L256 148.3L384 191.8L384 492.1L256 449.4zM432 198L528 150.6L528 448.8L432 494L432 198z"/></svg>
+                </div>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>ADDRESS</strong></p>
+                <p class="!text-[#939393] text-[14px] line-[1.7]">4955 S. Durango Dr., Ste. 121, <br>Las Vegas, NV 89113</p>
+            </div>
+            <div class="block px-[4px] py-[20px] lg:p-[20px] my-[20px] w-[100%] md:w-[24%] text-center">
+                <div class="icon w-[20px] mx-auto mb-[10px]">
+                    <svg fill="#b184bb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
+                </div>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>GET OUR LATEST OFFERS</strong></p>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><a class="!text-[#fc9547]" href="mailto:sales@vegastechs.com">sales@vegastechs.com</a></p>
+            </div>
+            <div class="block p-[20px] my-[20px] w-[100%] md:w-[22%] lg:w-[24%] text-center">
+                <div class="icon w-[20px] mx-auto mb-[10px]">
+                    <svg fill="#b184bb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM248 192.7C257.8 190 268.1 195.1 272 204.5L292.3 253.2C295.7 261.5 293.4 271 286.4 276.7L264.3 294.7C280.5 330.5 308.8 359.7 343.9 377.1L363.2 353.5C368.9 346.6 378.4 344.2 386.7 347.6L435.4 367.9C444.8 371.8 449.8 382.1 447.2 391.9L446.4 394.7C437.6 427 406.3 454.6 368.2 446.5C280.7 428 211.9 359.1 193.3 271.6C185.2 233.5 212.8 202.2 245.1 193.4L247.9 192.6z"/></svg>
+                </div>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>CONTACT</strong></p>
+                <p class="!text-[#939393] text-[14px] line-[1.7]"><a class="!text-[#fc9547]" href="tel:7028706116">(702)870-6116</a></p>
+            </div>
+            <div class="block py-[20px] my-[20px] w-[100%] md:w-[28%]">
+                <div class="icon w-[80px] gap-[40px] flex mx-auto mb-[10px]">
+                    <a href="https://www.facebook.com/vegastechs/" style="width: 20px;"><svg fill="#939393" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L258.2 544L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96z"/></svg></a>
+                    <a href="https://x.com/vegastechs" style="width: 20px;"><svg fill="#939393" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM457.1 180L353.3 298.6L475.4 460L379.8 460L305 362.1L219.3 460L171.8 460L282.8 333.1L165.7 180L263.7 180L331.4 269.5L409.6 180L457.1 180zM419.3 431.6L249.4 206.9L221.1 206.9L392.9 431.6L419.3 431.6z"/></svg></a>
+                </div>
+                <p class="!text-white text-[16px] line-[1.7] text-center max-w-[224px] m-auto">Copyright © 2024 VegasTechs, LLC. All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="footer-bottom border-t-[2px] mt-[40px] border-white px-[20px]">
+            <div class="flex max-w-[1100px] w-[100%] m-auto py-[20px] justify-between flex-wrap md:flex-nowrap">
+                <div class="logo w-[100%] md:w-auto"><a href="/" class="flex justify-center mb-[6px] md:mb-[0px]"><img src="img/vegastechs_logo.png" alt="VegasTech Logo" class="w-[150px] md:w-[190px] lg:w-[220px]"></a></div>
+                <ul class="flex w-[100%] md:w-auto text-[16px] text-white items-center justify-center">
+                    <li class="mx-[14px]"><a href="/" class="hover:text-orange-500 transition">Home</a></li>
+                    <li class="mx-[14px]"><a href="/newservices.html" class="hover:text-orange-500 transition">Our Services</a></li>
+                    <li class="mx-[14px]"><a href="/newcontact-us.html" class="hover:text-orange-500 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const lines = menuBtn.querySelectorAll(".line");
+
+    menuBtn.addEventListener("click", () => {
+        document.body.classList.toggle("overflow-hidden");
+
+        mobileMenu.classList.toggle("-translate-x-full");
+
+        lines[0].classList.toggle("rotate-45");
+        lines[0].classList.toggle("translate-y-[11px]");
+
+        lines[1].classList.toggle("opacity-0");
+
+        lines[2].classList.toggle("-rotate-45");
+        lines[2].classList.toggle("-translate-y-[10px]");
+    });
+
+    // 🔥 Dropdown Script
+    document.querySelectorAll(".mobile-dropdown").forEach((dropdown) => {
+
+        const toggleBtn = dropdown.querySelector(".dropdown-toggle");
+        const menu = dropdown.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", function (e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            menu.classList.toggle("hidden");
+            toggleBtn.classList.toggle("rotate-180");
+
+        });
+
+    });
+
+});
+
+
+
+
+const boxes = document.querySelectorAll('.box');
+function checkInView() {
+  boxes.forEach(box => {
+    const rect = box.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      box.classList.add('in-view');
+    } else {
+      box.classList.remove('in-view');
+    }
+  });
+}
+window.addEventListener('scroll', checkInView);
+checkInView();
+
+</script>
+
+</body>
+</html>
