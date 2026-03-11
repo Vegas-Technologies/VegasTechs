@@ -74,30 +74,38 @@ body {
 	margin-bottom: 30px;
 	line-height: 1.7;
 }
-h2 {
+
+h1, h2 {
 	margin-bottom: 20px;
-	font-size: 45px !important;
+    text-shadow: 1px 1px 1px #0004;
 	line-height: 1.2;
-	color: #1a8e9c !important;
-	text-align: center;
-	font-family: 'montserrat';
-	font-weight: 700;
 }
-h3 {
-	font-size: 40px;
-	line-height: 1.2;
-	font-weight: 400;
-	margin-bottom: 25px;
-	color: #fff;
-	text-align: left;
-}
-h4 {
-	font-size: 17px;
+
+h1, h2, h3, h4 {
 	text-align: center;
-	line-height: 1.2;
 	font-weight: 700;
 	font-family: 'Montserrat';
 }
+
+h1 {
+	font-size: 45px;
+	color: #14636c;
+}
+
+h2 {
+	font-size: 40px;
+	color: #1a8e9c;
+}
+
+h3 {
+	font-size: 35px;
+}
+
+h4 {
+	font-size: 17px;
+	line-height: 1.2;
+}
+
 .sub-title {
 	color: #f68632;
 	font-size: 16px;
