@@ -19,24 +19,7 @@ description: Contact us for IT consulting, project inquiries, and technology sol
             </div>
         </div>
         <div class="form w-[100%] mt-[40px] md:mt-[0px] md:w-[50%] md:px-[20px]">
-            <form action="https://formsubmit.co/youremail@example.com" method="POST" class="space-y-6">
-                <div>
-                    <input type="text" name="name" placeholder="Name*" required class="w-full border border-[#393939] focus:outline-none focus:border-[#f47c20] py-[9px] px-[15px] rounded-[4px]" style="background-color: transparent;">
-                </div>
-                <div>
-                    <input type="email" name="email" placeholder="Email*" required class="w-full border border-[#393939] focus:outline-none focus:border-[#f47c20] py-[9px] px-[15px] rounded-[4px]" style="background-color: transparent;">
-                </div>
-                <div>
-                    <input type="text" name="company" placeholder="Company" class="w-full border border-[#393939] focus:outline-none focus:border-[#f47c20] py-[9px] px-[15px] rounded-[4px]" style="background-color: transparent;">
-                </div>
-                <div>
-                    <input type="text" name="subject" placeholder="Subject" class="w-full border border-[#393939] focus:outline-none focus:border-[#f47c20] py-[9px] px-[15px] rounded-[4px]" style="background-color: transparent;">
-                </div>
-                <div>
-                    <textarea name="message" placeholder="Message*" required class="w-full border border-[#393939] h-40 resize-none focus:outline-none focus:border-[#f47c20] py-[9px] px-[15px] rounded-[4px]" style="background-color: transparent;"></textarea>
-                </div>
-                <button type="submit" class="bg-black text-white px-8 py-3 uppercase tracking-wider hover:bg-gray-800 transition rounded-[4px]">Send Message</button>
-            </form>
+            {% include contact.html %}
         </div>
     </div>
 </section>

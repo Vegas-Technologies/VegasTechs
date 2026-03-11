@@ -37,3 +37,7 @@ For local development, clone this repo, checkout your relevant branch, and follo
     Your browser may need your SSL certificate .crt/.cert file imported in order to be recognized.  
     This will likely be in the Settings page and in security settings.  
     Steps for each browser may vary.  
+
+    You may add _config.yml override files to add settings for your local environment:  
+    Remember to add your local file to `.git/info/exclude` (the untracked version of .gitignore)  
+    And, with `_config.local.yml` as an example, you may use the command `bundle exec jekyll serve -c _config.yml,_config.local.yml` to run your local server. Attributes in later config files override earlier ones.  

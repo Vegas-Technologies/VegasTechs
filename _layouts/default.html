@@ -15,7 +15,8 @@
         <link rel="icon" sizes="32x32" href="{{ site.assets }}/images/favicon.webp"/>
     
         <!-- CSS Files -->
-        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision }}">
+        {% comment %} <!-- Github Stylesheet that isn't used --> {% endcomment %}
+        <!-- <link rel="stylesheet" href="{{ site.assets | append: '/css/style.css?v=' | append: site.github.build_revision }}"> -->
         <link rel="stylesheet" href="{{ site.assets }}/css/main.css">
 
         <!-- Google Fonts (Optimized) -->
