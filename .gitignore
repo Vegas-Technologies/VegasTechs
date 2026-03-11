@@ -1,1 +1,13 @@
 node_modules/
+
+_site
+.sass-cache
+.jekyll-*
+.indexPOPUPBLOCK.html
+*.lock
+dist/
+
+# Generated file
+assets/css/main.css
+
+_config.local.yml

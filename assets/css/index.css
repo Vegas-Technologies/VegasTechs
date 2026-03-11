@@ -1,0 +1,150 @@
+/* @tailwind directives after @font-face directives */
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/lato/Lato-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-display: swap;
+}
+
+@import('tailwindcss');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+	max-width: 1170px;
+}
+.dropsvg svg {
+	width: 7px;
+	height: 7px;
+	display: inline;
+}
+.body-text {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 30px;
+	line-height: 1.7;
+}
+h2 {
+	margin-bottom: 20px;
+	font-size: 45px !important;
+	line-height: 1.2;
+	color: #1a8e9c !important;
+	text-align: center;
+	font-family: 'montserrat';
+	font-weight: 700;
+}
+h3 {
+	font-size: 40px;
+	line-height: 1.2;
+	font-weight: 400;
+	margin-bottom: 25px;
+	color: #fff;
+	text-align: left;
+}
+h4 {
+	font-size: 17px;
+	text-align: center;
+	line-height: 1.2;
+	font-weight: 700;
+	font-family: 'Montserrat';
+}
+.sub-title {
+	color: #f68632;
+	font-size: 16px;
+	line-height: 1.7;
+	margin: 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+input::placeholder, textarea::placeholder {
+	color: #383837;
+}
+.box {
+	opacity: 0;
+	transform: translateX(150px);
+	transition: all 0.8s ease-out;
+}
+.slide-right {
+	transform: translateX(-150px);
+}
+.box.in-view {
+	opacity: 1;
+	transform: translateX(0);
+}
+.peopleCulturBlock svg{
+	width: 50px;
+	height: 50px;
+}
+@media (max-width: 991px) {
+	h3 {
+		font-size: 34px;
+	}
+}
+@media (max-width: 767px) {
+	h2 {
+		font-size: 32px !important;
+	}
+	h3 {
+		font-size: 22px;
+	}
+	h4 {
+		font-size: 15px;
+	}
+	.sub-title {
+		font-size: 13px;
+		margin-bottom: 10px;
+	}
+	.alt-br br {
+		display: none;
+	}
+}
