@@ -48,6 +48,22 @@ jobs:
             -o ./assets/css/main.css \
             --minify
 
+      - name: Add CSS content hash
+        run: |
+          set -e
+          CSS_PATH="assets/css/main.css"
+          if [ ! -f "$CSS_PATH" ]; then
+              echo "Compiled CSS not found at $CSS_PATH" >&2
+              exit 1
+          fi
+          HASH="$(sha256sum "$CSS_PATH" | cut -c1-12)"
+          HASHED_NAME="main.$HASH.css"
+          HASHED_PATH="assets/css/$HASHED_NAME"
+          mv "$CSS_PATH" "$HASHED_PATH"
+          echo "Hashed CSS: $HASHED_PATH" >&2
+          echo "" >> _config.yml
+          echo "hashed_css: $HASHED_NAME" >> _config.yml
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         env:

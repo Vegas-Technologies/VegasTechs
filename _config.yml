@@ -64,3 +64,8 @@ exclude:
     - vendor/gems/
     - vendor/ruby/
     - about-us.html
+    # Used by Tailwind
+    - assets/css/index.css
+
+# A fallback for development. The github actions workflow shall append a new hashed_css variable after building Tailwind and calculating a SHA256 hash for it.
+hashed_css: main.css
