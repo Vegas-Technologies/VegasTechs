@@ -31,7 +31,7 @@
     </head>
 
     <body>
-        <header class="bg-white shadow-sm relative z-[111]">
+        <header class="bg-white shadow-sm relative z-[111] h-[100px]">
             <div class="container">
                 <div class="flex items-center justify-between h-[98px]">
                     <!-- Logo -->
@@ -40,15 +40,43 @@
                     </div>
 
                     <!-- Desktop Menu -->
-                    <nav class="hidden md:block">
+                    <nav class="hidden md:block uppercase">
                         <ul class="flex items-center gap-[20px] md:gap-[24px] lg:gap-[32px] text-sm font-medium text-gray-700">
-                            <li><a href="" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">HOME</a></li>
+                            <li><a href=""
+                                   class="hover:text-orange-500 transition font-lato font-semibold
+                                          text-[12.8px] relative inline-block
+                                          after:absolute after:left-0 after:right-0 after:top-0
+                                          after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0
+                                          after:origin-center after:transition-transform after:duration-300
+                                          hover:after:scale-x-100"
+                                   >Home</a></li>
 
+                            {% comment %}
                             <li><a href="about-us" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">ABOUT</a></li>
+                            {% endcomment %}
 
                             <li class="relative group">
                                 <div class="wrap">
-                                    <a href="services" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">OUR SERVICES</a>
+                                    <a href="services"
+                                       class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">Our Services</a>
+
+                                    <span class="ml-1 dropsvg">
+                                        <svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                                    </span>
+                                </div>
+
+                                <ul class="absolute left-0 pt-3 w-48 bg-white shadow-lg rounded-md
+                                           opacity-0 invisible group-hover:opacity-100 
+                                           group-hover:visible transition duration-200">
+                                    <li><a href="services#network-design-implementaion" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block">Network Design & Implementation</a></li>
+                                    <li><a href="services#nationwide-cabling-infrastructure" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block">Nationwide Cabling & Infrastructure</a></li>
+                                    <li><a href="services#managed-it-support" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block">Managed IT Support</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="relative group">
+                                <div class="wrap">
+                                    <a href="javascript:void(0);" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">VT Flex</a>
                                     <span class="ml-1 dropsvg">
                                         <svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
                                     </span>
@@ -57,29 +85,12 @@
                                 <ul class="absolute left-0 pt-3 w-48 bg-white shadow-lg rounded-md
                                         opacity-0 invisible group-hover:opacity-100 
                                         group-hover:visible transition duration-200">
-                                    <li><a href="services#network-design-implementaion" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Network Design & Implementation</a></li>
-                                    <li><a href="services#nationwide-cabling-infrastructure" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Nationwide Cabling & Infrastructure</a></li>
-                                    <li><a href="services#managed-it-support" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Managed IT Support</a></li>
+                                    <li><a href="http://demo.vegastechs.com/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block">Demo</a></li>
+                                    <li><a href="http://demo1.vegastechs.com/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block">Demo 1</a></li>
                                 </ul>
                             </li>
-
-                            <li class="relative group">
-                                <div class="wrap">
-                                    <a href="javascript:void(0);" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">VT FLEX</a>
-                                    <span class="ml-1 dropsvg">
-                                        <svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
-                                    </span>
-                                </div>
-
-                                <ul class="absolute left-0 pt-3 w-48 bg-white shadow-lg rounded-md
-                                        opacity-0 invisible group-hover:opacity-100 
-                                        group-hover:visible transition duration-200">
-                                    <li><a href="http://demo.vegastechs.com/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Demo</a></li>
-                                    <li><a href="http://demo1.vegastechs.com/" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] px-4 py-2 block uppercase">Demo 1</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="careers" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">CAREERS</a></li>
-                            <li><a href="contact-us" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">CONTACT</a></li>
+                            <li><a href="careers" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">Careers</a></li>
+                            <li><a href="contact-us" class="hover:text-orange-500 transition font-lato font-semibold text-[12.8px] relative inline-block after:absolute after:left-0 after:right-0 after:top-0 after:h-[2px] after:w-full after:bg-[#f47c20] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100">Contact</a></li>
                         </ul>
                     </nav>
 
@@ -93,13 +104,17 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="fixed top-0 left-0 h-screen w-full bg-white z-50 transform -translate-x-full transition-transform duration-500 ease-in-out md:hidden">
+            <div id="mobileMenu" class="fixed top-0 left-0 h-screen w-full bg-white z-50 transform -translate-x-full transition-transform duration-500 ease-in-out md:hidden uppercase">
                 <ul class="flex flex-col p-8 pt-[120px] space-y-6 text-[15px] font-bold text-[#393939]">
-                    <li><a href="">HOME</a></li>
+                    <li><a href="">Home</a></li>
+
+                    {% comment %}
                     <li><a href="about-us">ABOUT</a></li>
+                    {% endcomment %}
+
                     <li class="mobile-dropdown">
                         <div class="flex items-center justify-between">
-                            <a href="services" class="font-bold">OUR SERVICES</a>
+                            <a href="services" class="font-bold">Our Services</a>
                             <button type="button" class="dropdown-toggle transition-transform duration-300">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
@@ -112,6 +127,7 @@
                             <li><a href="services#managed-it-support">Managed IT Support</a></li>
                         </ul>
                     </li>
+
                     <li class="mobile-dropdown">
                         <div class="flex items-center justify-between">
                             <a href="javascript:void(0);" class="font-bold">VT FLEX</a>
@@ -126,8 +142,8 @@
                             <li><a href="http://demo1.vegastechs.com/">Demo 1</a></li>
                         </ul>
                     </li>
-                    <li><a href="careers">CAREERS</a></li>
-                    <li><a href="contact-us">CONTACT</a></li>
+                    <li><a href="careers">Careers</a></li>
+                    <li><a href="contact-us">Contact</a></li>
                 </ul>
             </div>
         </header>
@@ -142,25 +158,23 @@
                     <div class="icon w-[20px] mx-auto mb-[10px]">
                         <svg fill="#fc9547" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M576 112C576 103.7 571.7 96 564.7 91.6C557.7 87.2 548.8 86.8 541.4 90.5L416.5 152.1L244 93.4C230.3 88.7 215.3 89.6 202.1 95.7L77.8 154.3C69.4 158.2 64 166.7 64 176L64 528C64 536.2 68.2 543.9 75.1 548.3C82 552.7 90.7 553.2 98.2 549.7L225.5 489.8L396.2 546.7C409.9 551.3 424.7 550.4 437.8 544.2L562.2 485.7C570.6 481.7 576 473.3 576 464L576 112zM208 146.1L208 445.1L112 490.3L112 191.3L208 146.1zM256 449.4L256 148.3L384 191.8L384 492.1L256 449.4zM432 198L528 150.6L528 448.8L432 494L432 198z"/></svg>
                     </div>
-                    <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>ADDRESS</strong></p>
+                    <p class="!text-[#939393] text-[14px] line-[1.7] uppercase"><strong>Address</strong></p>
                     <p class="!text-[#939393] text-[14px] line-[1.7]">{{ site.address }} <br/> {{ site.address_2 }}</p>
                 </div>
                 <div class="block px-[4px] py-[20px] lg:p-[20px] my-[20px] w-[100%] md:w-[24%] text-center">
                     <div class="icon w-[20px] mx-auto mb-[10px]">
                         <svg fill="#b184bb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
                     </div>
-                    <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>GET OUR LATEST OFFERS</strong></p>
+                    <p class="!text-[#939393] text-[14px] line-[1.7] uppercase"><strong>Get our latest offers</strong></p>
                     <p class="!text-[#939393] text-[14px] line-[1.7]"><a class="!text-[#fc9547]" href="mailto:sales@vegastechs.com">sales@vegastechs.com</a></p>
                 </div>
                 <div class="block p-[20px] my-[20px] w-[100%] md:w-[22%] lg:w-[24%] text-center">
                     <div class="icon w-[20px] mx-auto mb-[10px]">
                         <svg fill="#b184bb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM248 192.7C257.8 190 268.1 195.1 272 204.5L292.3 253.2C295.7 261.5 293.4 271 286.4 276.7L264.3 294.7C280.5 330.5 308.8 359.7 343.9 377.1L363.2 353.5C368.9 346.6 378.4 344.2 386.7 347.6L435.4 367.9C444.8 371.8 449.8 382.1 447.2 391.9L446.4 394.7C437.6 427 406.3 454.6 368.2 446.5C280.7 428 211.9 359.1 193.3 271.6C185.2 233.5 212.8 202.2 245.1 193.4L247.9 192.6z"/></svg>
                     </div>
-                    <p class="!text-[#939393] text-[14px] line-[1.7]"><strong>CONTACT</strong></p>
-                    <p class="!text-[#939393] text-[14px] line-[1.7]">
-                        <a class="!text-[#fc9547]" href="tel:{{ site.phone }}">
-                            ({{ site.phone | slice: 0, 3 }}){{ site.phone | slice: 3, 3 }}-{{ site.phone | slice: 6, 4 }}
-                        </a>
+                    <p class="!text-[#939393] text-[14px] line-[1.7] uppercase"><strong>Contact</strong></p>
+                    <p class="text-[#fc9547] text-[14px] line-[1.7]">
+                        {% include phone.html %}
                     </p>
                 </div>
                 <div class="block py-[20px] my-[20px] w-[100%] md:w-[28%]">

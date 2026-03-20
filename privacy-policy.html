@@ -94,9 +94,7 @@ title: Privacy Policy
                 <p>{{ site.address }}<br/>
                 {{ site.address_2 }}</p>
                 <p><a href="mailto:{{ site.privacy_email }}">{{ site.privacy_email }}</a></p>
-                <p><a href="tel:{{ site.phone }}">
-                    ({{ site.phone | slice: 0, 3 }}){{ site.phone | slice: 3, 3 }}-{{ site.phone | slice: 6, 4 }}
-                </a></p>
+                <p>{% include phone.html %}</p>
             </address>
         </li>
     </ol>

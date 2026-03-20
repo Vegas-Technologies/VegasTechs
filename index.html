@@ -1,59 +1,96 @@
 ---
 ---
-<section class="home-banner relative p-[20px] min-h-[640px] flex items-center" style="background: url('{{ site.assets }}/images/banner.webp') no-repeat fixed 80% 74%/cover;">
+<section
+    class="home-banner relative h-[calc(100vh-100px)] flex flex-col items-center justify-between
+           text-white text-center"
+    style="background: url('{{ site.assets }}/images/banner.webp') no-repeat fixed 80% 74%/cover;
+           text-shadow-md"
+>
     <div class="overlay absolute w-[100%] h-[100%] top-0 left-0 opacity-[0.7] bg-[#171717]"></div>
-    <div class="content px-0 md:px-[20px] py-[80px] my-[20px] relative z-[1] max-w-[1100px] m-auto text-center">
-        <h1 class="text-white text-[32px] md:text-[55px] font-[700] leading-[1.2] mb-[30px] font-montserrat box slide-right">
+
+    <div
+        class="flex flex-col gap-4 px-2 md:px-[20px] m-auto py-[40px] relative z-[1] max-w-[1100px] m-auto"
+    >
+        <h1 class="text-white text-[32px] md:text-[55px] font-[700] leading-[1.2] mb-[30px] font-montserrat">
             Networking & IT Solutions <br>for Every Industry
         </h1>
-        <p class="body-text alt-br">Over a decade of expertise in Networking, Security, and <br>Low Voltage Cabling – delivering tailored solutions through top vendors to fit any budget.</p>
+
+        <p class="text-lg">Over a decade of expertise in Networking, Security, and Low Voltage Cabling</p>
+
+        <ul class="grid grid-cols-2 text-left w-fit m-auto gap-[0.5rem_1rem] text-inward">
+            <li><a>WiFi</a></li>
+            <li><a>Security Systems</a></li>
+            <li><a>Network Installation</a></li>
+            <li><a>VoIP</a></li>
+            <li><a>Cabling</a></li>
+            <li><a>Monitoring</a></li>
+        </ul>
+    </div>
+
+    <div class="w-full p-2 z-[1] bg-[#213152] text-white text-lg font-bold">
+        <span>Have a project in mind? Contact us at</span>
+        <span>{% include phone.html %}</span>
     </div>
 </section>
 
-<section class="out-partners bg-[#171717] px-[20px] pt-[50px] md:pt-[100px] pb-[50px] md:pb-[110px]">
+<section class="bg-[#171717] text-white px-[20px] pt-[50px] md:pt-[100px] pb-[50px] md:pb-[110px]
+                text-shadow-md">
     <div class="flex flex-col items-center">
         <div class="content max-w-[600px]">
             <h2 class="font-montserrat font-bold">Our Partners</h2>
-            <p class="body-text">From secure networks to structured cabling, we design and deliver high-performance IT systems that keep your business connected, protected, and future-ready.</p>
+            <p class="mb-4">
+            From secure networks to structured cabling, we design and deliver high-performance IT systems to companies both local and nationwide.
+            </p>
         </div>
+
         <div class="flex justify-center max-w-[364px] gap-[32px]">
-            <div class="card min-w-[130px] rounded-[10px] border border-solid border-[#1a8e9c] px-[20px] py-[10px] bg-[#202020]">
+            <div
+                class="card min-w-[130px] rounded-[10px]
+                shadow-[0_2px_2px_0_#1a8e9c] px-[20px] py-[10px] bg-[#202020]"
+            >
                 <img src="{{ site.assets }}/images/eagleeye.webp" class="w-[88px]" alt="eagleeye">
             </div>
-            <div class="card min-w-[130px] rounded-[10px] border border-solid border-[#1a8e9c] px-[20px] py-[10px] bg-[#202020]">
+
+            <div
+                class="card min-w-[130px] rounded-[10px]
+                shadow-[0_2px_2px_0_#1a8e9c] px-[20px] py-[10px] bg-[#202020]"
+            >
                 <img src="{{ site.assets }}/images/3deye.webp" class="w-[88px]" alt="3DEye">
             </div>
         </div>
     </div>
 </section>
 
-<section class="it-solution py-[64px] bg-white">
-    <div class="container">                
-        <p class="sub-title box slide-right"><strong>WHAT WE OFFER</strong></p>
-        <h2 class="box slide-right">Our IT Solutions</h2>
-        <p class="body-text !text-[#6e6f72]">With years of proven expertise, VegasTechs turns complex IT challenges <br>into seamless solutions that empower your business.</p>
-        <div class="flex mt-[60px] box slide-right flex-wrap md:flex-nowrap">
-            <div class="block">
+<section class="it-solution py-[64px] bg-white text-shadow-sm">
+    <div class="container box slide-right text-center text-[#393939]">
+        <p class="sub-title uppercase"><strong>What We Offer</strong></p>
+        <h2>Our IT Solutions</h2>
+        <p>We turns complex IT challenges into seamless solutions that empower your business.</p>
+
+        <div class="flex gap-4 mt-[40px] flex-wrap md:flex-nowrap">
+            <div id="wifi-voip" class="block">
                 <img src="{{ site.assets}}/images/wifi.webp" alt="wifi" class="m-auto mb-[20px]">
-                <h4 class="mb-[25px] !text-[#393939]">Turn-Key WiFi Installation</h4>
-                <p class="body-text !text-[#393939]">VegasTechs completes your turn-key wireless project, providing secure WiFi for staff, guests, and VoIP phones in hotels, offices, apartments, condos, and medical buildings.</p>
+                <h4 class="mb-[25px]">Turn-Key WiFi Installation</h4>
+                <p>We quickly and efficiently complete your turn-key wireless project, providing secure WiFi for staff, guests, and VoIP phones in any commercial or residential buildings.</p>
             </div>
-            <div class="block mx-[16px]">
+
+            <div id="network" class="block mx-[16px]">
                 <img src="{{ site.assets }}/images/network.webp" alt="network" class="m-auto mb-[20px]">
-                <h4 class="mb-[25px] !text-[#393939]">Network Design & Implementation</h4>
-                <p class="body-text !text-[#393939]">VegasTechs provides converged network design and project management for enterprise network installations and upgrades in office, conference, and hospitality environments.</p>
+                <h4 class="mb-[25px]">Network Design & Implementation</h4>
+                <p>We provide converged network design and project management for enterprise network installations and upgrades to your business.</p>
             </div>
-            <div class="block">
+
+            <div id="nationwide" class="block">
                 <img src="{{ site.assets }}/images/service.webp" alt="service" class="m-auto mb-[20px]">
-                <h4 class="mb-[25px] !text-[#393939]">Nationwide Service</h4>
-                <p class="body-text !text-[#393939]">VegasTechs is a CA C-10 licensed company providing professional cabling infrastructure installation in new and existing structures for data, voice, video, and sound systems.</p>
+                <h4 class="mb-[25px]">Nationwide Service</h4>
+                <p>We are a CA C-10 licensed company providing professional cabling infrastructure installation in new and existing businesses.</p>
             </div>
         </div>
     </div>
 </section>
 
 <section
-    class="about-us relative py-[80px] px-[24px] flex items-center"
+    class="about-us relative py-[80px] px-[24px] flex items-center text-shadow-md"
     style="color:white;background: url({{ site.assets }}/images/about-us.webp) no-repeat fixed 27% 44%/cover;"
 >
     <div class="overlay absolute w-[100%] h-[100%] top-0 left-0 opacity-[0.7] bg-[#171717]"></div>
@@ -64,60 +101,80 @@
                 <h3>Your Trusted Partner in IT Infrastructure</h3>
             </div>
             <div class="block w-[100%] md:w-[34%] p-[3px] lg:p-[10px]">
-                <p class="body-text !text-left">VegasTechs is a trusted IT solutions provider specializing in networking, WiFi, and security for enterprise and hospitality clients.</p>
-            </div>
-        </div>
-        <div class="flex box slide-right flex-wrap md:flex-nowrap">
-            <div class="block mb-[10px] md:mb-[0px] w-[100%] md:w-[33.33%] px-[50px] py-[30px] bg-[#fc9547]">
-                <img src="{{ site.assets }}/images/briefcase.webp" alt="briefcase" class="m-auto !my-[5px]">
-                <h4 class="mb-[25px] !text-white !text-[16px]">10+ years in enterprise IT solutions</h4>
-            </div>
-            <div class="block mb-[10px] md:mb-[0px] w-[100%] md:w-[33.33%] px-[50px] py-[30px] bg-[#1a8e9c]">
-                <img src="{{ site.assets }}/images/business-time.webp" alt="business-time" class="m-auto !my-[5px]">
-                <h4 class="mb-[25px] !text-white !text-[16px]">Specialized in hospitality and corporate networking</h4>
-            </div>
-            <div class="block mb-[10px] md:mb-[0px] w-[100%] md:w-[33.33%] px-[50px] py-[30px] bg-[#c9aecf]">
-                <img src="{{ site.assets }}/images/global.webp" alt="global" class="m-auto !my-[5px]">
-                <h4 class="mb-[25px] !text-white !text-[16px]">Trusted by brands like Marriott, Hilton, & AT&T</h4>
+                <p class="text-left">
+                Vegas Technologies is a trusted IT solutions provider specializing in networking, Wi-Fi, and security systems for businesses. Based in Las Vegas, we deliver reliable, scalable solutions to organizations of all sizes, serving clients locally and nationwide.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="why-choose-us py-[64px] bg-white">
-    <div class="container">
-        <p class="sub-title box slide-right"><strong>WHY CHOOSE US?</strong></p>
-        <h2 class="box slide-right">Why VegasTechs?</h2>
-        <p class="body-text !text-[#6e6f72]">At VegasTechs, we combine experience, expertise, and customer-centric service to deliver industry-leading IT solutions.</p>
-        <div class="flex mt-[60px] box slide-right flex-wrap md:flex-nowrap">
+<section class="why-choose-us py-[64px] bg-white text-shadow-sm">
+    <div class="container box slide-right text-[#393939]">
+        <p class="sub-title uppercase"><strong>Why Choose Us?</strong></p>
+
+        <h2 class="text-center">Why VegasTechs?</h2>
+
+        <p>At Vegas Technologies, we combine experience, expertise, and client focused service to deliver industry-leading IT solutions. As a trusted IT solutions provider, we have a proven track record of delivering projects quickly and efficiently for our partners.</p>
+        <div class="flex mt-[60px] flex-wrap md:flex-nowrap">
             <div class="block px-[0px] pb-[20px] md:p-[16px]">
-                <img src="{{ site.assets }}/images/Turn-Key-WiFi-Installation.webp" alt="Turn Key WiFi Installation" class="m-auto mb-[20px] w-[196px] lg:w-[272px] object-cover aspect-square">
-                <h4 class="mb-[25px] !text-[#393939] !font-lato">Enterprise-Grade Networking Solutions</h4>
-                <p class="body-text !text-[#393939]">We specialize in designing and implementing large-scale network infrastructures for businesses, hospitality, and enterprise environments, ensuring seamless connectivity.</p>
+                <img
+                    src="{{ site.assets }}/images/Turn-Key-WiFi-Installation.webp"
+                    alt="Turn Key WiFi Installation"
+                    class="m-auto mb-[20px] w-[196px] lg:w-[272px] object-cover aspect-square
+                    rounded-md shadow-md"
+                >
+                <h4 class="mb-[25px] font-lato">Enterprise-Grade Networking Solutions</h4>
+                <p>
+                With extensive experience in large-scale network design and implementation, we deliver high performance and reliable infrastructure for business, hospitality, and enterprise environments.
+                </p>
             </div>
+
             <div class="block mx-0 md:mx-[16px] px-[0px] pb-[20px] md:p-[16px]">
-                <img src="{{ site.assets }}/images/Network-Design-Implementation.webp" alt="Network Design Implementation" class="m-auto mb-[20px] w-[196px] lg:w-[272px] object-cover aspect-square">
-                <h4 class="mb-[25px] !text-[#393939] !font-lato">Strategic Technology Partnerships</h4>
-                <p class="body-text !text-[#393939]">As partners with industry leaders like Cisco, HP, and Ruckus, we leverage cutting-edge technology to deliver high-performance IT solutions tailored to your needs.</p>
+                <img
+                    src="{{ site.assets }}/images/Network-Design-Implementation.webp"
+                    alt="Network Design Implementation"
+                    class="m-auto mb-[20px] w-[196px] lg:w-[272px] object-cover aspect-square
+                    rounded-md shadow-md"
+                >
+                <h4 class="mb-[25px] font-lato">Strategic Technology Partnerships</h4>
+                <p>
+                As partners with industry leaders like Cisco, HP, and Ruckus, we leverage cutting-edge technology to deliver IT solutions tailored to your needs.
+                </p>
             </div>
+
             <div class="block px-[0px] md:p-[16px]">
-                <img src="{{ site.assets }}/images/Nationwide-Service.webp" alt="Nationwide Service" class="m-auto mb-[20px] w-[196px] lg:w-[272px] object-cover aspect-square">
-                <h4 class="mb-[25px] !text-[#393939] !font-lato">24/7 Enterprise IT Support</h4>
-                <p class="body-text !text-[#393939]">Our dedicated support team ensures round-the-clock monitoring, troubleshooting, and maintenance, keeping your IT infrastructure running smoothly at all times.</p>
+                <img
+                    src="{{ site.assets }}/images/Nationwide-Service.webp"
+                    alt="Nationwide Service"
+                    class="m-auto mb-[20px] w-[196px] lg:w-[272px] object-cover aspect-square
+                    rounded-md shadow-md"
+                >
+                <h4 class="mb-[25px] font-lato">24/7 Enterprise IT Support</h4>
+                <p>
+                Our dedicated support team ensures round-the-clock monitoring, troubleshooting, and maintenance, keeping your IT infrastructure running smoothly at all times.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="contact relative py-[80px] px-[20px] flex items-center" style="background: url('{{ site.assets }}/images/coastline.webp') no-repeat fixed 0% 0%/cover;">
+<section
+    class="contact relative py-[80px] px-[20px] flex items-center text-white text-shadow-md"
+    style="background: url('{{ site.assets }}/images/coastline.webp') no-repeat fixed 0% 0%/cover;"
+>
     <div class="overlay absolute w-[100%] h-[100%] top-0 left-0 opacity-[0.5] bg-[#171717]"></div>
-    <div class="relative z-[1] max-w-[1100px] w-[100%] m-auto flex items-center flex-wrap md:flex-nowrap">
-        <div class="content w-[100%] md:w-[50%]">
-            <h2 class="!text-left box slide-right">Have a Project in Mind? <br><span class="!text-[#f47c20]">Let’s Connect !</span></h2>
-            <p class="body-text !text-left">Reach out to us by filling out the form, and our team will get back to you promptly with tailored IT solutions.</p>
+
+    <div
+        class="relative box slide-right z-[1] max-w-[1100px] w-[100%] m-auto
+               flex flex-col gap-4 md:flex-row items-center md:items-start"
+    >
+        <div class="content w-[100%] md:w-[50%] text-left md:h-[16rem] md:sticky md:top-[calc(50vh-8rem)]">
+            <h2 class="text-inherit mb-2">Have a Project in Mind?</h2>
+            <h3 class="text-[#f47c20] mb-4">Let’s Connect!</h3>
+            <p class="text-lg mb-8">Reach out to us by filling out the form, and our team will get back to you promptly.</p>
         </div>
-        <div class="form w-[100%] md:w-[50%] px-[20px] py-[40px] bg-white">
-            {% include contact.html %}
-        </div>
+
+        {% include contact.html %}
     </div>
 </section>

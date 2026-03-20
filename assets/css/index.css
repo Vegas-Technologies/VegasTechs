@@ -67,13 +67,6 @@ body {
 	height: 7px;
 	display: inline;
 }
-.body-text {
-	color: #fff;
-	text-align: center;
-	margin: 0;
-	margin-bottom: 30px;
-	line-height: 1.7;
-}
 
 h1, h2 {
 	margin-bottom: 20px;
@@ -82,7 +75,6 @@ h1, h2 {
 }
 
 h1, h2, h3, h4 {
-	text-align: center;
 	font-weight: 700;
 	font-family: 'Montserrat';
 }
@@ -156,3 +148,20 @@ input::placeholder, textarea::placeholder {
 		display: none;
 	}
 }
+
+.text-inward > :nth-child(odd) {
+    text-align: left;
+}
+
+.text-inward > :nth-child(even) {
+    text-align: right;
+}
+
+.text-shadow-sm {
+    text-shadow: 0 1px 0 rgb(5 0 10 / 0.05), 0 1px 1px rgb(5 0 10 / 0.05), 0 2px 2px rgb(5 0 10 / 0.05);
+}
+
+.text-shadow-md {
+    text-shadow: 0 1px 1px rgb(5 0 10 / 0.3), 0 1px 2px rgb(5 0 10 / 0.3), 0 2px 4px rgb(5 0 10 / 0.3);
+}
+
